@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title> Cubic Bezier curve generator | CSS | toolitup.com</title>
+
+	<meta charset="UTF-8">
+	<meta name="description" content="Cubic-bezier curve generator | CSS | toolitup.com">
+	<meta name="robots" content="INDEX, FOLLOW, NOODP, NOARCHIVE" />
+	<meta name="robots" content="noimageindex" />
+	<meta name="keywords" content="cubic-bezier, bezier, timing-function, css, transition, animation" > 
+
+	<meta property="og:title" content="Cubic-bezier curve generator | CSS | toolitup.com" />
+	<meta property="og:image" content="assets/images/logo.png" />
+	<meta property="og:description" content="Cubic-bezier curve generator | CSS | toolitup.com" />
+	<meta property="og:site_name" content="toolitup" />
+	
+    <link rel="canonical" href="http://www.toolitup.com/cubic-bezier.html" />	
+	<link rel="shortcut icon" href="/favicon.png" type="image/png">
+	<link rel="icon" href="/favicon.png" type="image/png">
+
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" href="assets/css/jquery-ui-slider-pips.css" />
+	<link rel="stylesheet" href="assets/css/cubic-bezier.css" />
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+	<script src="assets/js/jquery-ui-slider-pips.min.js"></script>
+	
+	<script src="assets/js/lodash.min.js"></script>
+	<script src="assets/js/ZeroClipboard.min.js"></script>
+
+	
+</head>
+
+<body>
+	<div id="fb-root"> </div>
+	<script>
+		window.fbAsyncInit = function() {
+			FB.init({
+			appId      : '791808880883628',
+			xfbml      : true,
+			version    : 'v2.1'
+			});
+		};
+		
+		(function(d, s, id){
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {return;}
+			js = d.createElement(s); js.id = id;
+			js.src = "http://connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+
+	<div class="top-container">
+		<div class="flex-container">
+			<div class="left-item">
+				<a href="http://www.toolitup.com">
+					<img class='t-logo' src="assets/images/logo.png" alt="ToolitUp.com" >
+				</a>
+			
+				<div class='plane'>
+					<div class='drawing-plane'>
+						<canvas id='cubic-bezier' width="200" height="540"></canvas>
+						<button class='curve-pointer moveable' id='P0'></button>
+						<button class='curve-pointer moveable' id='P1'></button>
+						<button class='curve-pointer fixed' id='FP0'></button>
+						<button class='curve-pointer fixed' id='FP1'></button>
+					</div>
+				</div>
+			</div>
+			<div class="middle-item">
+				<h1 class='cb-title'>Cubic Bezier Generator</h1>
+				<div class='cb-code' >transition: 
+					<span class='cb-transit'>all</span> 
+					<span class='cb-duration' >1.0s</span> 
+					<span class='cb-curve'>
+						<span>
+							cubic-bezier(
+						</span>
+						<span class='cb-x1' ></span>, 
+						<span class='cb-y1' ></span>,
+						<span class='cb-x2' ></span>,
+						<span class='cb-y2' ></span>)
+					</span>
+					<span class='cb-copy' data-clipboard-text="copy"> <i class="fa fa-files-o"></i> </span>
+				</div>
+				
+				<div class='cb-duration-wrapper'>
+					<div class="flex-container">
+						<div class="flex-duration-item">
+							<span class="cb-duration-msg"> Transition-duration: </span>
+						</div>
+						<div class="flex-duration-slider">
+							<div class='cb-slider-wrapper'>
+								<div id='cb-slider'></div>
+							</div>
+						</div>
+					</div>
+					<div class='cb-animate-msg'>Compare<i class="fa fa-check"></i> & Animate<i class="fa fa-play-circle-o "></i></div>
+					<div class="flex-wrap-container">
+						<div class="cb-animate cb-animate-current" data-name="current">
+							<canvas id='animate-bezier' width="60" height="60"></canvas>
+						</div>
+						<div class="cb-animate cb-compare-opt" data-name="linear">
+							<canvas id='linear' width="60" height="60"></canvas>
+							<i class="cb-tick fa fa-check"></i>
+						</div>
+						<div class="cb-animate cb-compare-opt" data-name="ease">
+							<canvas id='ease' width="60" height="60"></canvas>
+							<i class="cb-tick fa fa-check"></i>
+						</div>
+						<div class="cb-animate cb-compare-opt" data-name="ease-in">
+							<canvas id='ease-in' width="60" height="60"></canvas>
+							<i class="cb-tick fa fa-check"></i>
+						</div>
+						<div class="cb-animate cb-compare-opt" data-name="ease-in-out">
+							<canvas id='ease-in-out' width="60" height="60"></canvas>
+							<i class="cb-tick fa fa-check"></i>
+						</div>
+						<div class="cb-animate cb-compare-opt" data-name="ease-out">
+							<canvas id='ease-out' width="60" height="60"></canvas>
+							<i class="cb-tick fa fa-check"></i>
+						</div>
+					</div>
+					<button class='cb-compare' id='cb-compare'>	<i class="fa fa-play-circle-o "></i> Animate! </button>
+					
+				</div>
+				<div class='t-comments'>
+					<!--
+					Disqus comments
+					-->
+					
+					<div id="disqus_thread"></div>
+					<script type="text/javascript">
+						var disqus_shortname = 'toolitup'; // required: replace example with your forum shortname
+						var disqus_identifier = '/css/cubic-bezier';
+						var disqus_title = "Toolitup | CSS - cubic bezier curve generator";
+						var disqus_url = "http://www.toolitup.com/css/cubic-bezier.html";
+				
+						(function() {
+							var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+							dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+							(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+						})();
+					</script>
+					<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+					<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+					
+					<script>
+						(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+						(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+						m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+						})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+						
+						ga('create', 'UA-55005923-1', 'auto');
+						ga('send', 'pageview');		
+
+					</script>				
+					
+					
+					<script type="text/javascript">
+						window.___gcfg = {
+							lang: 'en-US'
+						}; 
+			
+						(function() {
+							var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+							po.src = 'https://apis.google.com/js/plusone.js';
+							var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+						})();
+					</script>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				
+				</div>
+			</div>
+			<div class='right-item'>
+
+				<div class='t-social' data-like="&#10084 &#10084 &#10084"> 
+					<a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.toolitup.com/cubic-bezier.html" data-text="Build cubic-bezier timing function using" data-hashtags="css-toolitup">Tweet</a>
+					<g:plusone size="tall" data-href="http://www.toolitup.com/cubic-bezier.html" ></g:plusone>	
+					<script src="http://platform.linkedin.com/in.js" type="text/javascript">
+						lang: en_US
+					</script>
+					<script type="IN/Share" data-url="http://www.toolitup.com/cubic-bezier.html" data-counter="top"></script>
+					<div class="fb-like" data-href="http://www.toolitup.com/cubic-bezier.html" data-layout="box_count" data-action="like" data-width="60" data-show-faces="true" data-share="false"></div>	
+				</div>
+
+
+				<div class="plane">
+					<canvas id='cubic-bezier-play' width="200" height="540"></canvas>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="assets/js/cubic-bezier.min.js"></script>
+</body>
+
+</html>

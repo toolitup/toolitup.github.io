@@ -1,0 +1,97 @@
+@import url(http://fonts.googleapis.com/css?family=Bubblegum+Sans);
+
+.tool-logo {
+	position: absolute;
+	top: 10%;
+	left: 45vw;
+	cursor: pointer;
+}
+
+.flex-container {
+	padding: 5%;
+	margin: 5%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+	align-content : center;
+}	
+	
+.t-heading {
+	height: 20%;
+	text-align: center;
+	background-color: rgba(148, 209, 16, 0.51);
+	color: dimgrey;
+	font-size: 22pt;
+	border-radius: 20px 20px 0px 0px;
+  	display: inline-block;
+  	vertical-align: middle;
+	line-height: 3em;
+	width: 100%;
+
+}
+
+
+.cb-title:before {
+	content:"{CSS} ";
+	color: rgb(68, 194, 68);
+	font-size: 30pt;
+	font-family: 'Bubblegum Sans', cursor;
+	font-weight: 100;
+}
+
+
+.cb-title {
+	color: rgba(0, 0, 0, 0.58);
+	font-family: 'Bubblegum Sans', cursor;
+	font-weight: 100;
+}
+
+.t-body {
+	height: 80%;
+	font-size: larger;
+	line-height: 1.3em;
+	margin: 15px;
+	margin-bottom: 0px;
+}	
+
+.flex-item {
+  	/* background: rgba(154, 205, 50, 0.76); */
+  	padding: 5px;
+  	width: 400px;
+  	height: 400px;
+  	margin: 20px;
+  	color: dimgrey;
+  	font-weight: bold;
+  	font-size: 1em;
+  	display: inline-block;
+	
+  	border: 5px solid yellowgreen; 
+	cursor: pointer;
+	border-radius: 20px;
+}
+
+.todo-item {	
+	color: rgb(219, 219, 219);
+	text-align: center;
+	font-family: monospace;
+	font-size: 20pt;
+	line-height: 10em;
+	cursor: initial;
+}
+
+.active-item:active {
+	margin-top: 2px;
+}
+
+.s-cubic-bezier {
+	width: 96%;
+	height: 55%;
+}
+
