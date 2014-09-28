@@ -114,7 +114,6 @@ span.cb-duration:focus, span.cb-duration:active, span.cb-duration:hover, span.cb
     top: -1%;
 }
 .flex-container, .top-container, .flex-wrap-container {
-    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -134,19 +133,19 @@ span.cb-duration:focus, span.cb-duration:active, span.cb-duration:hover, span.cb
     min-width: 992px;
 }
 .left-item, .right-item {
-    box-sizing: border-box;
-    -webkit-box-flex: 0;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
     -webkit-flex: 0 0 300px;
-        -ms-flex: 0 0 300px;
-            flex: 0 0 300px;
+    -ms-flex: 0 0 300px;
+        flex: 0 0 300px;
     padding: 0.5em 10px;
 }
 .middle-item {
-    box-sizing: border-box;
-    -webkit-box-flex: 1;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
     -webkit-flex: 1 1 auto;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
     margin-left: 10px;
     margin-right: 10px;
     max-width: 600px;
@@ -155,33 +154,29 @@ span.cb-duration:focus, span.cb-duration:active, span.cb-duration:hover, span.cb
 .right-item {
 }
 .flex-duration-slider {
-    -webkit-box-flex: 12;
     -webkit-flex: 12 12 auto;
-        -ms-flex: 12 12 auto;
-            flex: 12 12 auto;
+    -ms-flex: 12 12 auto;
+        flex: 12 12 auto;
     position: relative;
 }
 .flex-duration-item {
-    -webkit-box-flex: 1;
     -webkit-flex: 1 1 175px;
-        -ms-flex: 1 1 175px;
-            flex: 1 1 175px;
+    -ms-flex: 1 1 175px;
+        flex: 1 1 175px;
 }
 .t-comments {
  	padding-top: 30px;
  }
 .top-container > .flex-container {
-    -webkit-box-flex: 1;
     -webkit-flex: 1 1 100%;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
     margin: 20px;
 }
 .cb-animate {
-    -webkit-box-flex: 1;
     -webkit-flex: 1 1 auto;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
 }
 .cb-duration-wrapper {
     margin-bottom: 50px;
@@ -212,7 +207,8 @@ span.cb-duration:focus, span.cb-duration:active, span.cb-duration:hover, span.cb
     -moz-border-top-colors: none;
     border-color: rgb(0, 143, 255) transparent;
     -webkit-border-image: none;
-            border-image: none;
+            -o-border-image: none;
+       border-image: none;
     border-style: solid;
     border-width: 0.4em 0.4em 0;
     bottom: -0.5em;
@@ -400,3 +396,5 @@ body {
     width: 1280px;
 }
 
+
+/*# sourceMappingURL=cubic-bezier.css.map */

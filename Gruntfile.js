@@ -19,12 +19,26 @@ module.exports = function(grunt) {
         },],
       },
     },
+
+   autoprefixer: {
+
+      options: {
+        diff: true,
+        map: true
+      },
+      toolitup_css: {
+        expand: true,
+        flatten: true,
+        src: 'public/assets/css/*.css'
+      },
+    },
   });
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
-
+  grunt.loadNpmTasks('grunt-autoprefixer');
+  
   // Default task(s).
-  grunt.registerTask('default', ['uglify']);
+  grunt.registerTask('default', ['uglify', 'autoprefixer']);
 
 };
