@@ -1,12 +1,12 @@
 {
-  "name": "Toolitup",
+  "name": "toolitup",
   "version": "1.0.0",
   "description": "Building online application tools",
   "keywords": [
-    "OpenShift",
+    "toolitup",
     "Node.js",
     "application",
-    "openshift"
+    "css"
   ],
   "author": {
     "name": "Prince & Senthil",
