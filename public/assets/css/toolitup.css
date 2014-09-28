@@ -1,15 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Bubblegum+Sans);
 
 .tool-logo {
-	position: absolute;
-	top: 10%;
-	left: 45vw;
 	cursor: pointer;
 }
 
 .flex-container {
-	padding: 5%;
-	margin: 5%;
+	padding: 2%;
+	margin: 1%;
+	min-width: 350px;
+}
+
+.flex-container, .flex-logo-container {
+
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -28,7 +30,7 @@
 	text-align: center;
 	background-color: rgba(148, 209, 16, 0.51);
 	color: dimgrey;
-	font-size: 22pt;
+	font-size: 18pt;
 	border-radius: 20px 20px 0px 0px;
   	display: inline-block;
   	vertical-align: middle;
@@ -37,11 +39,14 @@
 
 }
 
+.t-heading:hover {
+	background-color: rgba(148, 209, 16, 0.71);	
+}
 
 .cb-title:before {
 	content:"{CSS} ";
 	color: rgb(68, 194, 68);
-	font-size: 30pt;
+	font-size: 18pt;
 	font-family: 'Bubblegum Sans', cursor;
 	font-weight: 100;
 }
@@ -55,8 +60,8 @@
 
 .t-body {
 	height: 80%;
-	font-size: larger;
-	line-height: 1.3em;
+	font-size: 10pt;
+	/* line-height: 1.3em; */
 	margin: 15px;
 	margin-bottom: 0px;
 }	
@@ -64,8 +69,8 @@
 .flex-item {
   	/* background: rgba(154, 205, 50, 0.76); */
   	padding: 5px;
-  	width: 400px;
-  	height: 400px;
+  	width: 300px;
+  	height: 300px;
   	margin: 20px;
   	color: dimgrey;
   	font-weight: bold;
@@ -77,12 +82,16 @@
 	border-radius: 20px;
 }
 
+.flex-item:hover {
+	border: 5px solid rgba(154, 205, 50, 0.78);	
+}
+
 .todo-item {	
 	color: rgb(219, 219, 219);
 	text-align: center;
 	font-family: monospace;
-	font-size: 20pt;
-	line-height: 10em;
+	font-size: 18pt;
+	line-height: 8em;
 	cursor: initial;
 }
 

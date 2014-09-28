@@ -349,6 +349,8 @@ button.cb-compare:active, button.cb-compare:focus, button.cb-compare:hover {
     max-width: 280px;
     min-width: 280px;
     top: 10%;
+    min-height: 65px;
+    max-height: 65px;
 }
 .t-social:before {
     color: deeppink;
@@ -369,3 +371,4 @@ body {
     margin: 0 auto;
     width: 1280px;
 }
+
