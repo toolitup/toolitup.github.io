@@ -11,18 +11,21 @@
 }
 
 .flex-container, .flex-logo-container {
-
-	display: -webkit-box;
-	display: -moz-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: center;
+	-ms-flex-flow: row wrap;
+	    flex-flow: row wrap;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-align: center;
+	    align-items: center;
 	-webkit-align-items: center;
-	align-content : center;
+	-webkit-align-content : center;
+	    -ms-flex-line-pack : center;
+	        align-content : center;
 }	
 	
 .t-heading {
@@ -104,3 +107,5 @@
 	height: 55%;
 }
 
+
+/*# sourceMappingURL=toolitup.css.map */

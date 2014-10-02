@@ -143,18 +143,12 @@
         color: #333;
         
         -webkit-transition-duration: 200ms, 200ms, 0;
-        -moz-transition-duration: 200ms, 200ms, 0;
-        -ms-transition-duration: 200ms, 200ms, 0;
         transition-duration: 200ms, 200ms, 0;
 
         -webkit-transition-property: opacity, top, visibility;
-        -moz-transition-property: opacity, top, visibility;
-        -ms-transition-property: opacity, top, visibility;
         transition-property: opacity, top, visibility;
         
         -webkit-transition-delay: 0, 0, 200ms;
-        -moz-transition-delay: 0, 0, 200ms;
-        -ms-transition-delay: 0, 0, 200ms;
         transition-delay: 0, 0, 200ms;
     }
     
@@ -169,8 +163,6 @@
         visibility: visible;
 
         -webkit-transition-delay:200ms, 200ms, 0;
-        -moz-transition-delay:200ms, 200ms, 0;
-        -ms-transition-delay:200ms, 200ms, 0;
         transition-delay:200ms, 200ms, 0;
         
     }
@@ -243,18 +235,12 @@
         color: #333;
         
         -webkit-transition-duration: 200ms, 200ms, 0;
-        -moz-transition-duration: 200ms, 200ms, 0;
-        -ms-transition-duration: 200ms, 200ms, 0;
         transition-duration: 200ms, 200ms, 0;
 
         -webkit-transition-property: opacity, left, visibility;
-        -moz-transition-property: opacity, left, visibility;
-        -ms-transition-property: opacity, left, visibility;
         transition-property: opacity, left, visibility;
         
         -webkit-transition-delay: 0, 0, 200ms;
-        -moz-transition-delay: 0, 0, 200ms;
-        -ms-transition-delay: 0, 0, 200ms;
         transition-delay: 0, 0, 200ms;
 
     }
@@ -381,3 +367,5 @@
 
 
 
+
+/*# sourceMappingURL=jquery-ui-slider-pips.css.map */

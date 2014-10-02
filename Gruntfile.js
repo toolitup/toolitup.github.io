@@ -27,8 +27,6 @@ module.exports = function(grunt) {
         map: true
       },
       toolitup_css: {
-        expand: true,
-        flatten: true,
         src: 'public/assets/css/*.css'
       },
     },
