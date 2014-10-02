@@ -24,11 +24,13 @@ module.exports = function(grunt) {
 
       options: {
         diff: true,
-        map: true
+        map: true,
+		browsers: ['> 1%', 'last 10 versions', 'Firefox ESR', 'Opera 12.1']
       },
       toolitup_css: {
         src: 'public/assets/css/*.css'
       },
+	  
     },
   });
 

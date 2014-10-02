@@ -13,15 +13,18 @@
 .flex-container, .flex-logo-container {
 	display: -ms-flexbox;
 	display: -webkit-flex;
+	display: -webkit-box;
 	display: flex;
 	-webkit-flex-flow: row wrap;
 	-ms-flex-flow: row wrap;
 	    flex-flow: row wrap;
 	-webkit-justify-content: center;
 	    -ms-flex-pack: center;
+	        -webkit-box-pack: center;
 	        justify-content: center;
 	-ms-flex-align: center;
-	    align-items: center;
+	    -webkit-box-align: center;
+	        align-items: center;
 	-webkit-align-items: center;
 	-webkit-align-content : center;
 	    -ms-flex-line-pack : center;
@@ -34,7 +37,8 @@
 	background-color: rgba(148, 209, 16, 0.51);
 	color: dimgrey;
 	font-size: 18pt;
-	border-radius: 20px 20px 0px 0px;
+	-webkit-border-radius: 20px 20px 0px 0px;
+	        border-radius: 20px 20px 0px 0px;
   	display: inline-block;
   	vertical-align: middle;
 	line-height: 3em;
@@ -82,7 +86,8 @@
 	
   	border: 5px solid yellowgreen; 
 	cursor: pointer;
-	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	        border-radius: 20px;
 }
 
 .flex-item:hover {
@@ -106,6 +111,4 @@
 	width: 96%;
 	height: 55%;
 }
-
-
 /*# sourceMappingURL=toolitup.css.map */
