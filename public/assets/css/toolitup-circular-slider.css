@@ -1,0 +1,305 @@
+@import "http://fonts.googleapis.com/css?family=Bubblegum+Sans";
+
+/* fork me */
+#forkongithub a {
+    background: dimgray;
+    color: #fff;
+    text-decoration: none;
+    font-family: arial,sans-serif;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 40px;
+    font-size: 1em;
+    line-height: 2em;
+    position: relative;
+    -webkit-transition: 0.5s;
+            transition: 0.5s;
+}
+
+#forkongithub a:hover {
+    background: rgb(131, 201, 68);
+    color: #fff;
+    box-shadow: 4px 4px 10px rgba(131, 201, 68, 0.56);
+}
+
+#forkongithub a::before,#forkongithub a::after {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    height: 1px;
+    background: #fff;
+}
+
+#forkongithub a::after {
+    bottom: 1px;
+    top: auto;
+}
+
+#forkongithub {
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 200px;
+    overflow: hidden;
+    height: 200px;
+    z-index: 9999;
+}
+
+#forkongithub a {
+    width: 200px;
+    position: absolute;
+    top: 60px;
+    right: -60px;
+    -webkit-transform: rotate(-45deg);
+            
+    transform: rotate(45deg);
+    /* -webkit-transform: rotate(45deg); */
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    box-shadow: 4px 4px 10px rgba(105, 105, 105, 0.56);
+    font-family: sans-serif;
+}
+
+
+/* end fork me banner */
+
+img.t-logo {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+}
+
+
+.cs-title, .cs-prefix, .cs-connect {
+    color: rgba(0, 0, 0, 0.58);
+    font-family: 'Bubblegum Sans',cursor;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+
+.cs-prefix, .cs-connect {
+    color: rgb(68, 194, 68);
+}
+
+.cs-connect {
+	padding: 0px 5px;
+}
+
+
+
+a.t-logo {
+    cursor: pointer;
+    z-index: 101;
+	outline:none;
+    display: table-cell;
+    vertical-align: middle;
+    table-layout: fixed;
+    width: 300px;
+}
+
+a.t-logo img {
+    width: 10em;
+}
+
+div.cs-header > h3 {
+    display: inline-block;
+}
+
+.cs-header {
+    display: table-cell;
+    text-align: left;
+    min-width: 300px;
+}
+
+div.cs-body {
+
+}
+
+div[id^='slider-'] {
+    display: table-cell;
+    vertical-align: middle;
+    /* padding-right: 10%; */
+	
+    width: 200px;
+    table-layout: fixed;
+}
+
+
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	background: transparent; 
+  
+	cursor: pointer;
+}
+
+#menu li span{
+	text-decoration:none;
+	padding: 20px 12px;
+	display:block;
+	color: white;
+	background-color: rgba(110, 165, 214, 1);
+	outline: none;
+}
+#menu{
+	z-index: 70;
+	height: 100px;
+	padding: 0;
+	margin: 0 auto;
+	display: table;
+}
+
+#menu li span:active, #menu li span:hover {
+	background-color: rgba(72, 142, 216, 1);
+}
+
+#menu li span:active {
+	position:relative;
+	top: 5px;
+}
+
+span[data-link="#FullCircle"] {
+    border-radius: 100% !important;
+}
+
+span[data-link="#HalfCircle"] {
+    border-radius: 90px 90px 0 0;
+}
+
+span[data-link="#HalfCircleRight"] {
+    border-radius: 0 90px 90px 0;
+}
+
+span[data-link="#HalfCircleLeft"] {
+    border-radius: 90px 0 0 90px;
+}
+
+span[data-link="#HalfCircleBottom"] {
+    border-radius: 0 0 90px 90px;
+    font-size: 0.9em;
+}
+
+span[data-link="#Rotation"] {
+    border-radius: 20px;
+}
+
+span[data-link="#Customized"] {
+    border-radius: 20px;
+}
+
+
+
+/*code highlight*/
+
+span.js-keyword {
+    color: blue;
+    font-weight: 900;
+}
+
+span.js-comment {
+    color: grey;
+}
+
+span.js-literal {
+    color: green;
+}
+
+span.js-value {
+    color: burlywood;
+}
+
+/*end code highlight*/
+
+code pre {
+    
+    font-size: 1em;
+    display: inline;
+    padding-left: 5%;
+}
+
+
+code.cs-jscode {
+    display: table-cell;
+    padding-left: 5%;
+    width: 760px;       height: auto;
+    table-layout: fixed;
+}
+
+div[class^="cs-demo-"] {
+    display: table;
+    margin: 0 10%;
+}
+
+
+body {
+    min-width: 900px;
+    min-height: 500px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+}
+
+.cs-container {
+}
+
+.cs-row, .t-comments {
+    display: table;
+    vertical-align: middle;
+    width: 80%;
+    margin: 0 auto;
+    min-width: 800px;
+}
+
+.t-comments {
+	width: 60%;
+}
+
+@media (max-width: 780px) {
+	
+	#forkongithub a {
+		opacity : 0.5;
+	}
+
+	#forkongithub a:hover {
+		opacity : 1;
+	}
+
+}
+
+.cs-demo {
+    margin: 4% auto;
+}
+
+div#slider-half-circle-right {
+    text-align: -webkit-center;
+}
+
+
+
+.t-social {
+    font-size: small;
+    max-width: 280px;
+    min-width: 280px;
+    top: 10%;
+    min-height: 65px;
+    max-height: 65px;
+}
+.t-social:before {
+    color: deeppink;
+    content: attr(data-like);
+    left: 50%;
+    position: relative;
+    top: 20px;
+    width: auto;
+}
+.t-social:hover:before {
+    content: attr(data-like);
+    top: 22px;
+}
+
