@@ -51,7 +51,7 @@
 }
 
 .cb-title:before {
-	content:"{CSS} ";
+	content: attr(data-domain);
 	color: rgb(68, 194, 68);
 	font-size: 18pt;
 	font-family: 'Bubblegum Sans', cursor;
@@ -107,7 +107,7 @@
 	margin-top: 2px;
 }
 
-.s-cubic-bezier {
+.s-circular-slider, .s-cubic-bezier {
 	width: 96%;
 	height: 55%;
 }

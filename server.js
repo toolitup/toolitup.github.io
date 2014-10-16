@@ -45,6 +45,7 @@ var ToolItUp = function() {
         //  Local cache for static content.
         self.zcache['index.html'] = fs.readFileSync('./index.html');
         self.zcache['cubic-bezier.html'] = fs.readFileSync('./cubic-bezier.html');
+        self.zcache['circular-slider.html'] = fs.readFileSync('./circular-slider.html');
     };
 
 
@@ -104,6 +105,11 @@ var ToolItUp = function() {
         self.routes['css/cubic-bezier.html'] = self.routes['/cubic-bezier.html'] = function(req, res) {
             res.setHeader('Content-Type', 'text/html');
             res.send(self.cache_get('cubic-bezier.html') );
+        };
+
+		self.routes['css/circular-slider.html'] = self.routes['/circular-slider.html'] = function(req, res) {
+            res.setHeader('Content-Type', 'text/html');
+            res.send(self.cache_get('circular-slider.html') );
         };
 
     };
