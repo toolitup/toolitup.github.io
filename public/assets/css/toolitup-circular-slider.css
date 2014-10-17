@@ -1,68 +1,21 @@
 @import "http://fonts.googleapis.com/css?family=Bubblegum+Sans";
 
 /* fork me */
+
+#forkongithub {
+	font-size: 3vmin;
+	margin: 0 auto;
+	display: table-cell;
+	text-align: center;
+}
+
 #forkongithub a {
-    background: dimgray;
-    color: #fff;
-    text-decoration: none;
-    font-family: arial,sans-serif;
-    text-align: center;
-    font-weight: bold;
-    padding: 5px 40px;
-    font-size: 1em;
-    line-height: 2em;
-    position: relative;
-    -webkit-transition: 0.5s;
-            transition: 0.5s;
+	color: dimgrey;
+	text-decoration: none;	
 }
 
 #forkongithub a:hover {
-    background: rgb(131, 201, 68);
-    color: #fff;
-    box-shadow: 4px 4px 10px rgba(131, 201, 68, 0.56);
-}
-
-#forkongithub a::before,#forkongithub a::after {
-    content: "";
-    width: 100%;
-    display: block;
-    position: absolute;
-    top: 1px;
-    left: 0;
-    height: 1px;
-    background: #fff;
-}
-
-#forkongithub a::after {
-    bottom: 1px;
-    top: auto;
-}
-
-#forkongithub {
-    position: fixed;
-    display: block;
-    top: 0;
-    right: 0;
-    width: 200px;
-    overflow: hidden;
-    height: 200px;
-    z-index: 9999;
-}
-
-#forkongithub a {
-    width: 200px;
-    position: absolute;
-    top: 60px;
-    right: -60px;
-    -webkit-transform: rotate(-45deg);
-            
-    transform: rotate(45deg);
-    /* -webkit-transform: rotate(45deg); */
-    -ms-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    box-shadow: 4px 4px 10px rgba(105, 105, 105, 0.56);
-    font-family: sans-serif;
+	color : rgb(68, 194, 68);
 }
 
 
@@ -113,8 +66,8 @@ div.cs-header > h3 {
 
 .cs-header {
     display: table-cell;
-    text-align: left;
-    min-width: 300px;
+    text-align: center;
+    min-width: 450px;
 }
 
 div.cs-body {
@@ -124,7 +77,7 @@ div.cs-body {
 div[id^='slider-'] {
     display: table-cell;
     vertical-align: middle;
-    /* padding-right: 10%; */
+    padding-right: 5%;
 	
     width: 200px;
     table-layout: fixed;
@@ -153,6 +106,7 @@ div[id^='slider-'] {
 	padding: 0;
 	margin: 0 auto;
 	display: table;
+	font-size: 2vmin;
 }
 
 #menu li span:active, #menu li span:hover {
@@ -221,14 +175,14 @@ code pre {
     font-size: 1em;
     display: inline;
     padding-left: 5%;
+    width: auto;
 }
 
 
 code.cs-jscode {
-    display: table-cell;
-    padding-left: 5%;
-    width: 760px;       height: auto;
+    display: table-cell;       height: auto;
     table-layout: fixed;
+    width: auto;
 }
 
 div[class^="cs-demo-"] {
@@ -243,6 +197,7 @@ body {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 3%;
+    overflow: auto;
 }
 
 .cs-container {
@@ -261,19 +216,19 @@ body {
 }
 
 @media (max-width: 780px) {
-	
-	#forkongithub a {
-		opacity : 0.5;
-	}
 
-	#forkongithub a:hover {
-		opacity : 1;
-	}
 
+	body {
+		overflow: scroll;
+	}
 }
 
 .cs-demo {
-    margin: 4% auto;
+    margin-top: 1%;
+    display: block;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 div#slider-half-circle-right {
@@ -303,3 +258,11 @@ div#slider-half-circle-right {
     top: 22px;
 }
 
+
+pre {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}

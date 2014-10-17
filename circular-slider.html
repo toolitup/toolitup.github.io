@@ -8,12 +8,14 @@
 	<meta name="robots" content="INDEX, FOLLOW, NOODP" />
 	<meta name="keywords" content="jquery, slider, circular slider, circular-slider.js, image carousel, half circle, github/circular-slider" > 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.25, maximum-scale=2.0, user-scalable=1" />
 	<meta property="og:title" content="Circular Slider - A JQuery Plugin | JS | toolitup.com" />
 	<meta property="og:image" content="assets/images/logo.png" />
 	<meta property="og:description" content="Circular Slider - A JQuery Plugin | JS | toolitup.com" />
 	<meta property="og:site_name" content="toolitup" />
 	
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="canonical" href="http://www.toolitup.com/circular-slider.html" />	
 	<link rel="shortcut icon" href="/favicon.png" type="image/png">
 	<link rel="icon" href="/favicon.png" type="image/png">
@@ -46,7 +48,6 @@
 		}(document, 'script', 'facebook-jssdk'));
 	</script>
 
-	<span id="forkongithub"><a href="https://github.com/princejwesley/circular-slider">Fork me on GitHub</a></span>
 		
 	<div class="cs-container">
 		<div class="cs-row">			
@@ -228,11 +229,10 @@ var </span>imageSlider = $(<span class='js-literal'>'#slider'</span>).CircularSl
         <span class='js-keyword'>return</span> <span class='js-literal'>'&lt;img src=&quot;assets/images/baby'</span> + parseInt(value / 26) + <span class='js-literal'>'.png&quot;&gt;&lt;/img&gt;'</span>;
     },
     slide : <span class='js-keyword'>function</span>(ui, value) {
-            <span class='js-keyword'>var</span> colors = [<span class='js-literal'>'deeppink'</span>, <span class='js-literal'>'seagreen'</span>, <span class='js-literal'>'deepskyblue'</span>, <span class='js-literal'>'coral'</span>, <span class='js-literal'>'cadetblue'</span>, <span class='js-literal'>'olive'</span>, <span class='js-literal'>'chocolate'</span>,
-                <span class='js-literal'>'yellowgreen'</span>, <span class='js-literal'>'cornflowerblue'</span>, <span class='js-literal'>'slategrey'</span>, <span class='js-literal'>'salmon'</span>, <span class='js-literal'>'brown'</span>, <span class='js-literal'>darkgoldenrod'</span>, <span class='js-literal'>'dimgrey'</span>];
-            <span class='js-keyword'>var</span> color = colors[parseInt(value / 26)];
-            ui.find(<span class='js-literal'>'.jcs'</span>).css({<span class='js-literal'>'border-color'</span> : color });
-            ui.find(<span class='js-literal'>'.jcs-indicator'</span>).css({<span class='js-literal'>'background'</span> : color });
+        <span class='js-keyword'>var</span> colors = [<span class='js-literal'>'deeppink'</span>, <span class='js-literal'>'seagreen'</span>, <span class='js-literal'>'deepskyblue'</span>,<span class='js-literal'>'coral'</span>, <span class='js-literal'>'cadetblue'</span>, <span class='js-literal'>'olive'</span>,<span class='js-literal'>'chocolate'</span>, <span class='js-literal'>'yellowgreen'</span>, <span class='js-literal'>'cornflowerblue'</span>,<span class='js-literal'>'slategrey'</span>, <span class='js-literal'>'salmon'</span>, <span class='js-literal'>'brown'</span>,<span class='js-literal'>darkgoldenrod'</span>, <span class='js-literal'>'dimgrey'</span>];
+        <span class='js-keyword'>var</span> color = colors[parseInt(value / 26)];
+        ui.find(<span class='js-literal'>'.jcs'</span>).css({<span class='js-literal'>'border-color'</span> : color });
+        ui.find(<span class='js-literal'>'.jcs-indicator'</span>).css({<span class='js-literal'>'background'</span> : color });
     }	
 });	
 					</pre>
@@ -241,6 +241,9 @@ var </span>imageSlider = $(<span class='js-literal'>'#slider'</span>).CircularSl
 			
 		</div>
 		<div class='t-comments'>
+			<div class="cs-row">			
+				<span id="forkongithub"><a href="https://github.com/princejwesley/circular-slider"><i class="fa fa-github"></i> fork me</a></span>
+			</div>
 			<!--
 			Disqus comments
 			-->
