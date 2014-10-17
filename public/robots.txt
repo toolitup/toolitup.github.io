@@ -3,3 +3,4 @@ Disallow:
 Allow: /
 Allow: /circular-slider.html
 Allow: /cubic-bezier.html
+Allow: /assets/*
