@@ -226,11 +226,11 @@ var </span>imageSlider = $(<span class='js-literal'>'#slider'</span>).CircularSl
     radius: <span class='js-value'>100</span>, 
     innerCircleRatio: <span class='js-value'>0.7</span>, 
     formLabel : <span class='js-keyword'>function</span>(value, prefix, suffix) {
-        <span class='js-keyword'>return</span> <span class='js-literal'>'&lt;img src=&quot;assets/images/baby'</span> + parseInt(value / 26) + <span class='js-literal'>'.png&quot;&gt;&lt;/img&gt;'</span>;
+        <span class='js-keyword'>return</span> <span class='js-literal'>'&lt;img src=&quot;assets/images/baby'</span> + parseInt(value / 23) + <span class='js-literal'>'.png&quot;&gt;&lt;/img&gt;'</span>;
     },
     slide : <span class='js-keyword'>function</span>(ui, value) {
         <span class='js-keyword'>var</span> colors = [<span class='js-literal'>'deeppink'</span>, <span class='js-literal'>'seagreen'</span>, <span class='js-literal'>'deepskyblue'</span>,<span class='js-literal'>'coral'</span>, <span class='js-literal'>'cadetblue'</span>, <span class='js-literal'>'olive'</span>,<span class='js-literal'>'chocolate'</span>, <span class='js-literal'>'yellowgreen'</span>, <span class='js-literal'>'cornflowerblue'</span>,<span class='js-literal'>'slategrey'</span>, <span class='js-literal'>'salmon'</span>, <span class='js-literal'>'brown'</span>,<span class='js-literal'>darkgoldenrod'</span>, <span class='js-literal'>'dimgrey'</span>];
-        <span class='js-keyword'>var</span> color = colors[parseInt(value / 26)];
+        <span class='js-keyword'>var</span> color = colors[parseInt(value / 23)];
         ui.find(<span class='js-literal'>'.jcs'</span>).css({<span class='js-literal'>'border-color'</span> : color });
         ui.find(<span class='js-literal'>'.jcs-indicator'</span>).css({<span class='js-literal'>'background'</span> : color });
     }	

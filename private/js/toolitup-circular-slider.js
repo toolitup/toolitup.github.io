@@ -83,12 +83,13 @@ $(function() {
 		radius: 100,
 		innerCircleRatio : .7,
 		formLabel : function(value, prefix, suffix) {
-			return '<img src="assets/images/baby'+ parseInt(value / 26)+'.png"></img>';
+			return '<img src="assets/images/baby' + parseInt(value / 23) + '.png"></img>';
 		},
 		slide : function(ui, value) {
 			var colors = ['deeppink', 'seagreen', 'deepskyblue', 'coral', 'cadetblue', 'olive', 'chocolate',
-				'yellowgreen', 'cornflowerblue', 'slategrey', 'salmon', 'brown', 'darkgoldenrod', 'dimgrey'];
-			var color = colors[parseInt(value / 26)];
+				'yellowgreen', 'cornflowerblue', 'slategrey', 'salmon', 'brown', 'darkgoldenrod', 'dimgrey',
+				'antiquewhite', 'turquoise'];
+			var color = colors[parseInt(value / 23)];
 			ui.find('.jcs').css({'border-color' : color });
 			ui.find('.jcs-indicator').css({'background' : color });
 		}
