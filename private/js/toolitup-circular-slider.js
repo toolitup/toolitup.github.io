@@ -96,7 +96,7 @@ $(function() {
 	});	
 
 	
-	$("div[class^='cs-demo-'").css('display', 'none');
+	$("div[class^='cs-demo-']").css('display', 'none');
 	
 	$('.cs-demo-1').css('display', 'table');
 	
