@@ -104,7 +104,7 @@ $(function() {
 	
 		var demo = $(this).data().menuanchor;
 
-		$('div[class^="cs-demo-"').css('display', 'none');
+		$('div[class^="cs-demo-"]').css('display', 'none');
 		$('.' + demo).css('display', 'table');		
 		
 	});
