@@ -107,7 +107,7 @@
 	margin-top: 2px;
 }
 
-.s-circular-slider, .s-cubic-bezier {
+.s-circular-slider, .s-cubic-bezier, .s-minimap {
 	width: 96%;
 	height: 55%;
 }
