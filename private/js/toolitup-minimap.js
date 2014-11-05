@@ -37,7 +37,6 @@ function initSlider($slider, slide) {
 		handle: true,
 		slide: function (event, ui) {
 			var divider = slide.divBy || 100;
-			console.log(divider);
 			var value = ui.value/divider;
 			if(slide.onSlide) slide.onSlide(value);
 		}
@@ -150,6 +149,7 @@ $(function() {
 			value: 20,
 			divBy: 100,
 			onSlide: function(value) {
+				value = value * 100;
 				value = value < 4 ? 4 : value;
 				window.minimap.setSmoothScrollDelay(value);
 				window['#smoothDelay1'].slider("value", value * 100 );
@@ -161,6 +161,7 @@ $(function() {
 			value: 20,
 			divBy: 100,
 			onSlide: function(value) {
+				value = value * 100;
 				value = value < 4 ? 4 : value;
 				window.minimap.setSmoothScrollDelay(value);
 				window['#smoothDelay'].slider("value", value * 100 );
