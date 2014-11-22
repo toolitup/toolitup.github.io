@@ -107,8 +107,7 @@
 	margin-top: 2px;
 }
 
-.s-circular-slider, .s-cubic-bezier, .s-minimap {
+.s-circular-slider, .s-cubic-bezier, .s-minimap, .s-atom-cubic-bezier {
 	width: 96%;
 	height: 55%;
 }
-/*# sourceMappingURL=toolitup.css.map */

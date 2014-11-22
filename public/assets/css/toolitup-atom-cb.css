@@ -1,0 +1,126 @@
+
+
+/* fork me */
+
+#forkongithub , #atom-cb-download{
+	font-size: 3vmin;
+	margin: 0 auto;
+	display: table-cell;
+}
+
+#forkongithub > a , #atom-cb-download > a{
+	color: dimgrey;
+	text-decoration: none;	
+}
+
+#forkongithub a:hover, #atom-cb-download a:hover {
+	color : rgb(68, 194, 68);
+}
+
+#forkongithub {
+	text-align: right;
+	position: relative;
+	float: right;
+}
+#atom-cb-download {
+	text-align: left;
+	position: absolute;
+	margin-left: 40px;
+}
+
+.cb-container {
+}
+
+.cb-row, .t-comments {
+    display: table;
+    vertical-align: middle;
+    width: 80%; 
+    margin: 20px auto;
+    min-width: 800px;
+}
+
+div.cb-header > h3 {
+    display: inline-block;
+}
+
+.cb-header {
+    display: table-cell;
+    text-align: center;
+    min-width: 450px;
+}
+
+.cb-title, .cb-prefix, .cb-connect {
+    color: rgba(0, 0, 0, 0.58);
+    font-family: 'Bubblegum Sans',cursor;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+ul {
+	list-style-type: none;
+	background: -webkit-linear-gradient(80deg, white, rgb(255, 248, 220), white);
+	background: linear-gradient(10deg, white, rgb(255, 248, 220), white);
+}
+
+ul > li {
+	line-height: 28px;
+	font-family: cursive;
+}
+
+.cb-prefix, .cb-connect {
+    color: rgb(68, 194, 68);
+}
+
+.cb-connect {
+	padding: 0px 5px;
+}
+
+body {
+    min-width: 900px;
+    min-height: 500px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    overflow: auto;
+}
+
+.cb-feature, .cb-installation, .cb-row {
+	margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+}
+
+.cb-installation {
+	margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+}
+
+@media (max-width: 780px) {
+
+
+	body {
+		overflow: scroll;
+	}
+}
+
+.t-social {
+    font-size: small;
+    max-width: 280px;
+    min-width: 280px;
+    top: 10%;
+    min-height: 65px;
+    max-height: 65px;
+}
+.t-social:before {
+    color: deeppink;
+    content: attr(data-like);
+    left: 50%;
+    position: relative;
+    top: 20px;
+    width: auto;
+}
+.t-social:hover:before {
+    content: attr(data-like);
+    top: 22px;
+}

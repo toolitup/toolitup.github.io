@@ -15,5 +15,8 @@ $(function () {
 	
 		window.location.href = "/minimap.html";
 	});
-
+	$('#atom-cubic-bezier-item').on('click', function() {
+	
+		window.location.href = "/atom-cubic-bezier.html";
+	});
 });
