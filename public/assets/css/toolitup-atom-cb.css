@@ -1,4 +1,5 @@
 
+@import url(http://fonts.googleapis.com/css?family=Bubblegum+Sans);
 
 /* fork me */
 
@@ -84,16 +85,14 @@ body {
     overflow: auto;
 }
 
-.cb-feature, .cb-installation, .cb-row {
+.cb-feature, .cb-installation, .cb-row, .cb-demo {
 	margin-left: 10%;
     margin-right: 10%;
     margin-top: 3%;
 }
 
-.cb-installation {
-	margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 3%;
+.cb-demo > img {
+	margin-left: 40px;
 }
 
 @media (max-width: 780px) {
