@@ -4,4 +4,5 @@ Allow: /
 Allow: /circular-slider.html
 Allow: /cubic-bezier.html
 Allow: /minimap.html
+Allow: /atom-cubic-bezier.html
 Allow: /assets/*
