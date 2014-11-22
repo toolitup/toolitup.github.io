@@ -47,7 +47,7 @@ var ToolItUp = function() {
         self.zcache['cubic-bezier.html'] = fs.readFileSync('./cubic-bezier.html');
         self.zcache['circular-slider.html'] = fs.readFileSync('./circular-slider.html');
  		self.zcache['minimap.html'] = fs.readFileSync('./minimap.html');
-		self.zcache['atom-cubic-bezier.html'] = fs.readFileSync('./atom-cubic-bezier.html');
+		self.zcache['atom-cubicbezier.html'] = fs.readFileSync('./atom-cubicbezier.html');
    };
 
 
@@ -119,9 +119,9 @@ var ToolItUp = function() {
                 res.send(self.cache_get('minimap.html') );
         };
 
-		self.routes['css/atom-cubic-bezier.html'] = self.routes['/atom-cubic-bezier.html'] = function(req, res) {
+		self.routes['css/atom-cubicbezier.html'] = self.routes['/atom-cubicbezier.html'] = function(req, res) {
             res.setHeader('Content-Type', 'text/html');
-            res.send(self.cache_get('atom-cubic-bezier.html') );
+            res.send(self.cache_get('atom-cubicbezier.html') );
         };
     };
 

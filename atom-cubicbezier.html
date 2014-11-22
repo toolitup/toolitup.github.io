@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>Atom Package for Cubic-bezier | Atom | toolitup.com</title>
+	<title>Atom Editor Package for Cubic-bezier | Atom | toolitup.com</title>
 
 	<meta charset="UTF-8">
 	<meta name="description" content="Cubic Bezier curve can be used as a timing-transition-function. This package helps to generate bezier curve during at the time of editing in atom text editor.">
@@ -11,12 +11,12 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="viewport" content="width=device-width, initial-scale=0.25, minimum-scale=0.1, maximum-scale=2.0, user-scalable=1" />
 
-	<meta property="og:title" content="Atom Package for Cubic-bezier | Atom | toolitup.com" />
+	<meta property="og:title" content="Atom Editor Package for Cubic-bezier | Atom | toolitup.com" />
 	<meta property="og:image" content="assets/images/logo.png" />
-	<meta property="og:description" content="Atom Package for Cubic-bezier | Atom | toolitup.com" />
+	<meta property="og:description" content="Atom Editor Package for Cubic-bezier | Atom | toolitup.com" />
 	<meta property="og:site_name" content="toolitup" />
 
-    <link rel="canonical" href="http://www.toolitup.com/cubic-bezier.html" />	
+    <link rel="canonical" href="http://www.toolitup.com/atom-cubicbezier.html" />	
 	<link rel="shortcut icon" href="/favicon.png" type="image/png">
 	<link rel="icon" href="/favicon.png" type="image/png">
 
@@ -28,42 +28,33 @@
 	<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
 </head>
 <body>
-	 <div id="fb-root"> </div>
-	<script>
-		window.fbAsyncInit = function() {
-			FB.init({
-			appId      : '791808880883628',
-			xfbml      : true,
-			version    : 'v2.1'
-			});
-		};
-		
-		(function(d, s, id){
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) {return;}
-			js = d.createElement(s); js.id = id;
-			js.src = "http://connect.facebook.net/en_US/sdk.js";
-			fjs.parentNode.insertBefore(js, fjs);
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+		fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 	</script>
-	
 	<div class="cb-container">
 		<div class="cb-row">	
 			<a href="http://www.toolitup.com" class="t-logo">
 				<img src="assets/images/logo.png" alt="ToolitUp.com" >
 			</a>
 			<div class='cb-header'>
-				<h3 class="cb-title">An Atom Package | Cubic-bezier curve</h3>
+				<h3 class="cb-title">Atom Editor Package | Cubic-bezier curve</h3>
 			</div>
 		
 			<div class='t-social' data-like="&#10084 &#10084 &#10084"> 
-				<a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.toolitup.com/atom-cubic-bezier.html" data-text="Cubic Bezier Curve - An Atom Package | toolitup.com" data-hashtags="javascript,jQuery,jQuery-toolitup,atom">Tweet</a>
-				<g:plusone size="tall" data-href="http://www.toolitup.com/atom-cubic-bezier.html" ></g:plusone>	
-				<script src="http://platform.linkedin.com/in.js" type="text/javascript">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.toolitup.com/atom-cubicbezier.html" data-text="Atom Edit Package | Cubic-bezier curve | toolitup.com" data-hashtags="javascript,jQuery,jQuery-toolitup">Tweet</a>
+				<script src="https://apis.google.com/js/platform.js" async defer></script>
+				<div class="g-plusone" data-size="tall"></div>
+				<script src="//platform.linkedin.com/in.js" type="text/javascript">
 					lang: en_US
 				</script>
-				<script type="IN/Share" data-url="http://www.toolitup.com/atom-cubic-bezier.html" data-counter="top"></script>
-				<div class="fb-like" data-href="http://www.toolitup.com/atom-cubic-bezier.html" data-layout="box_count" data-action="like" data-width="60" data-show-faces="true" data-share="false"></div>	
+				<script type="IN/Share" data-url="http://www.toolitup.com/atom-cubicbezier.html" data-counter="top"></script>
+				<div class="fb-share-button" data-href="http://www.toolitup.com/atom-cubicbezier.html" data-layout="box_count"></div>
 			</div>
 		</div>
 		<div class="cb-feature">
@@ -89,6 +80,11 @@
 			</div>
 		</div>
 			
+		<div class="cb-demo">
+			<h3 class="cb-prefix">Demo</h3>
+			<img class="cb-demo-image" src="https://rawgit.com/senthilporunan/atom-cubic-bezier/master/resources/output.gif" alt="atom-cubic-bezier"> </img>
+		</div>
+		
 		<div class='t-comments'>
 			<!--
 			Disqus comments
@@ -98,8 +94,8 @@
 			<script type="text/javascript">
 				var disqus_shortname = 'toolitup';
 				var disqus_identifier = '/atom/atom-cb';
-				var disqus_title = "Atom Package | Cubic-bezier curve | toolitup.com";
-				var disqus_url = "http://www.toolitup.com/atom/atom-cubic-bezier.html";
+				var disqus_title = "Atom Editor Package | Cubic-bezier curve | toolitup.com";
+				var disqus_url = "http://www.toolitup.com/css/atom-cubicbezier.html";
 		
 				(function() {
 					var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -122,8 +118,7 @@
 		ga('send', 'pageview');		
 
 	</script>				
-	
-	<script type="text/javascript">
+		<script type="text/javascript">
 		window.___gcfg = {
 			lang: 'en-US'
 		}; 
@@ -135,5 +130,6 @@
 		})();
 	</script>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
 </body>
 </html>
