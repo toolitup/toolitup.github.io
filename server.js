@@ -114,7 +114,7 @@ var ToolItUp = function() {
             res.send(self.cache_get('circular-slider.html') );
         };
 
-        self.routes['/minimap.html'] = function(req, res) {
+        self.routes['js/minimap.html'] = self.routes['/minimap.html'] = function(req, res) {
                 res.setHeader('Content-Type', 'text/html');
                 res.send(self.cache_get('minimap.html') );
         };
@@ -123,12 +123,17 @@ var ToolItUp = function() {
             res.setHeader('Content-Type', 'text/html');
             res.send(self.cache_get('atom-cubicbezier.html') );
         };
+
+        self.routes['css/atom-cubic-bezier.html'] = self.routes['/atom-cubic-bezier.html'] = function(req, res) {
+            res.setHeader('Content-Type', 'text/html');
+            res.send(self.cache_get('atom-cubicbezier.html') );
+        };
     };
 
 
     /**
      *  Plugin middlewares like logging etc..
-     * 
+     *
      */
 
     self.pluginMiddleware = function() {
@@ -139,10 +144,10 @@ var ToolItUp = function() {
         //app.use(express.logger());
         app.use(express.static(__dirname + '/public'));
         app.use(express.cookieParser('TopSecret+DoNotRevealIt+Promise!!!+:-)'));
-        
+
          // when page not found
         app.use(function(req, res, next) {
-            res.setHeader('Content-Type', 'text/html');            
+            res.setHeader('Content-Type', 'text/html');
             res.send(self.cache_get('404.html'));
         });
     }
@@ -200,4 +205,3 @@ var ToolItUp = function() {
 var toolitup = new ToolItUp();
 toolitup.initialize();
 toolitup.start();
-
