@@ -1,0 +1,101 @@
+
+@import url(http://fonts.googleapis.com/css?family=Bubblegum+Sans);
+
+/* fork me */
+
+
+.container {
+}
+
+.jr-row, .t-comments {
+    display: table;
+    vertical-align: middle;
+    width: 80%; 
+    margin: 20px auto;
+    min-width: 800px;
+}
+
+
+div.jr-header > h3 {
+    display: inline-block;
+}
+
+div.jr-main > h3 {
+	margin-top: 0px;
+	display: inline;
+}
+
+.jr-default {
+	color: goldenrod;
+	font-style: italic;
+	margin: 0px 0px 0px 30px;	
+}
+
+.jr-header {
+    display: table-cell;
+    text-align: center;
+    min-width: 450px;
+}
+
+.jr-title, .jr-prefix, .jr-connect {
+    color: rgb(68, 194, 68);
+    font-family: 'Bubblegum Sans',cursor;
+    font-size: 25px;
+    font-weight: 100;
+	margin-bottom: 0px;
+}
+
+.jr-header, .jr-main {
+	margin-left: 10%;
+    margin-right: 10%;
+	font-size: large;
+}
+
+ul {
+	list-style-type: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+ul > li {
+	line-height: 28px;
+}
+
+body {
+    min-width: 900px;
+    min-height: 500px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    overflow: auto;
+}
+
+div[id^='demo-'] {
+	display: inline;
+}
+
+div[id$='-value'] {
+	vertical-align: super;
+}
+a {
+	text-decoration: none;
+}
+
+li:first-child {
+	margin-bottom: 20px;
+}
+
+pre {
+	background: -webkit-linear-gradient(80deg, white, rgb(255, 248, 220), white);
+	background: linear-gradient(10deg, white, rgb(255, 248, 220), white);
+	margin-top: 20px;
+}
+
+#forkgithub {
+	font-size: 3vmin;
+	text-align: center;
+}
+
+#demo-main {
+	padding-left: 40%;
+}

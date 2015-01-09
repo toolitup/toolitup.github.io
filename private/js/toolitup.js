@@ -19,4 +19,9 @@ $(function () {
 	
 		window.location.href = "/atom-cubicbezier.html";
 	});
+	$('#jrate-item').on('click', function() {
+	
+		window.location.href = "/jRate.html";
+	});
+
 });
