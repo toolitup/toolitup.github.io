@@ -25,7 +25,6 @@ function generateJRate(id, options) {
         onChange: null,
         onSet: null
     };
-	console.dir(options);
 	var settings = $.extend({}, defaults, options);
 
 	//console.dir(settings);
@@ -50,7 +49,7 @@ function generateJRate(id, options) {
         reverse: settings.reverse,
         readOnly: settings.readOnly,
         onChange: function(rating) {
-				console.log("Rating: "+rating+"  Id: "+id);
+				
 				$("#"+id+"-value").text(rating);
 		},
         onSet: settings.onSet
@@ -65,7 +64,9 @@ $(function() {
 	generateJRate('demo-main', {});
 	generateJRate('demo-color', {startColor: 'cyan', endColor: 'blue'});
 	generateJRate('demo-width', {width: '60', height: '60'});
-	generateJRate('demo-shape', {shape: 'RHOMBUS'});
+	generateJRate('demo-shape', {shape: 'FOOD', startColor: 'lightpink', endColor: 'darkmagenta', width: '40', height: '40',rating:5});
+	generateJRate('demo-shape-twitter', {shape: 'TWITTER',width: '40', height: '40',startColor: '#58E4FF', endColor: '#4485F5',rating:5});
+	generateJRate('demo-shape-bulb', {shape: 'BULB',width: '40', height: '40',startColor: '#FFFEBE', endColor: '#419A11',rating:5});
 	generateJRate('demo-width-growth', {widthGrowth: 0.2, heightGrowth: 0.2});
 	generateJRate('demo-count', {count: 10});
 	generateJRate('demo-bg-color', {backgroundColor: 'black'});
@@ -85,7 +86,6 @@ $(function() {
 });
 
 function callOnChange() {
-	console.log("Call Onchange");
 	$("#demo-onchange").jRate({
 		rating: 3,
 		width: 30,
@@ -97,7 +97,6 @@ function callOnChange() {
 }
 
 function callOnSet() {
-	console.log("Call onset");
 	$("#demo-onset").jRate({
 		rating: 3,
 		width: 30,
