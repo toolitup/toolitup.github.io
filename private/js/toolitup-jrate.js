@@ -63,6 +63,7 @@ $(function() {
 	console.log("Entering into Start");
 	generateJRate('demo-main', {});
 	generateJRate('demo-color', {startColor: 'cyan', endColor: 'blue'});
+	generateJRate('demo-rating', {rating: '1'});
 	generateJRate('demo-width', {width: '60', height: '60'});
 	generateJRate('demo-shape', {shape: 'FOOD', startColor: 'lightpink', endColor: 'darkmagenta', width: '40', height: '40',rating:5});
 	generateJRate('demo-shape-twitter', {shape: 'TWITTER',width: '40', height: '40',startColor: '#58E4FF', endColor: '#4485F5',rating:5});
