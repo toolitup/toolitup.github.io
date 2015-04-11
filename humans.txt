@@ -1,0 +1,18 @@
+
+                            
+/* TEAM */
+Name: Prince John Wesley
+Twitter: @princejwesley
+Site: https://github.com/princejwesley
+Location: Chennai, India
+
+Name: Senthil Raja Porunan
+Twitter: @senthilporunan
+Site: https://github.com/senthilporunan
+Location: Chennai, India
+
+/* SITE */
+Last Update: 2015/04/11
+Standards: HTML5, CSS3, BootStrap, jQuery, Extensions, angular
+Components: grunt, browserify
+Twitter: @toolitup
