@@ -195,14 +195,26 @@ one color format also by giving same start and end color.</li>
 			</ul>
 		</div>
 		<div class="jr-main">
+			<h3 class="jr-title">Minimum Selected Value</h3>
+			<span class="jr-default">default: minSelected: 0</span>
+			<ul>
+				<li>Set the minimum selected value. Restrict user not able to select minimum this mentioned value.</li>
+				<li><div id="demo-min-selected" ></div><div id="demo-min-selected-value"></div></li>
+				<li><pre><code>
+	$("#jRate").jRate({
+		minSelected: 1
+	});</code></pre></li>
+			</ul>
+		</div>
+		<div class="jr-main">
 			<h3 class="jr-title">Precision</h3>
-			<span class="jr-default">default: precision: 1</span>
+			<span class="jr-default">default: precision: 0.1</span>
 			<ul>
 				<li>Set the precision value.</li>
 				<li><div id="demo-precision" ></div><div id="demo-precision-value"></div></li>
 				<li><pre><code>
 	$("#jRate").jRate({
-		precision: 0
+		precision: 0.5
 	});</code></pre></li>
 			</ul>
 		</div>

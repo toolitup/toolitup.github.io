@@ -75,7 +75,8 @@ $(function() {
 	generateJRate('demo-opacity', {opacity: 0.3});
 
 	generateJRate('demo-min-max', {min: 10, max: 15, rating: 11});
-	generateJRate('demo-precision', {precision: 0});
+	generateJRate('demo-min-selected', {minSelected: 1});
+	generateJRate('demo-precision', {precision: 0.5});
 	generateJRate('demo-horizontal', {horizontal: false});
 	generateJRate('demo-reverse', {reverse: true});
 	generateJRate('demo-readonly', {readOnly: true});
