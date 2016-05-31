@@ -7,14 +7,14 @@ module.exports = function(grunt) {
             options: {
                 mangle: true,
                 sourceMap: false,
-                banner: '/*! <%= pkg.name %> - V<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> */'
+                preserveComments: 'some',
             },
             dynamic_mappings: {
                 files: [{
                     expand: true,
-                    cwd: 'private/js',
+                    cwd: 'internal/js',
                     src: ['**/*.js'],
-                    dest: 'public/assets/js/',
+                    dest: 'assets/js/',
                     ext: '.min.js'
                 }, ],
             },
@@ -24,14 +24,21 @@ module.exports = function(grunt) {
 
             options: {
                 diff: true,
-                map: true,
-                browsers: ['> 1%', 'last 10 versions', 'Firefox ESR', 'Opera 12.1']
+                map: false,
+                browsers: ['> 1%', 'last 5 versions', 'Firefox ESR', 'Opera 12.1']
             },
             toolitup_css: {
-                src: 'public/assets/css/*.css'
+                src: 'assets/css/*.css'
             },
 
         },
+
+        jshint: {
+            all: ['Gruntfile.js', 'internal/js/*.js'],
+            options: {
+                multistr: true
+            }
+        }
     });
 
     // Load the plugin that provides the "uglify" task.

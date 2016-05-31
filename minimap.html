@@ -3,7 +3,6 @@
 
 <head>
     <title> Minimap - A JQuery Plugin | JS | toolitup.com</title>
-
     <meta charset="UTF-8">
     <meta name="description" content="A preview of full webpage or its DOM element with flexible positioning and navigation support">
     <meta name="robots" content="INDEX, FOLLOW, NOODP, NOARCHIVE" />
@@ -15,45 +14,42 @@
     <meta property="og:image" content="assets/images/logo.png" />
     <meta property="og:description" content="A preview of full webpage or its DOM element with flexible positioning and navigation support" />
     <meta property="og:site_name" content="toolitup" />
-
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
- 	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
     <link rel="canonical" href="http://www.toolitup.com/minimap.html" />
-    <link rel="shortcut icon" href="/favicon.png" type="image/png">
-    <link rel="icon" href="/favicon.png" type="image/png">
-
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="assets/css/toolitup-minimap.css" />
-	<link rel="stylesheet" href="assets/css/jquery-ui-slider-pips.css" />
+    <link rel="stylesheet" href="assets/css/jquery-ui-slider-pips.css" />
     <link rel="stylesheet" href="assets/css/minimap.min.css" />
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>	
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
     <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
-	<script src="assets/js/jquery-ui-slider-pips.min.js"></script>
-
+    <script src="assets/js/jquery-ui-slider-pips.min.js"></script>
 </head>
 
-
 <body>
-
     <div id="fb-root"> </div>
-	<script>
-		window.fbAsyncInit = function() {
-			FB.init({
-			appId      : '791808880883628',
-			xfbml      : true,
-			version    : 'v2.1'
-			});
-		};
-		
-		(function(d, s, id){
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) {return;}
-			js = d.createElement(s); js.id = id;
-			js.src = "http://connect.facebook.net/en_US/sdk.js";
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-	</script>
+    <script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId: '791808880883628',
+            xfbml: true,
+            version: 'v2.1'
+        });
+    };
 
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "http://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div class="mi-container">
         <div class="mi-row">
             <a href="http://www.toolitup.com" class="t-logo">
@@ -65,26 +61,22 @@
                 <h3 class="mi-connect">|</h3>
                 <h3 class="mi-title">A JQuery Plugin</h3>
             </div>
-
             <div class='t-social' data-like="&#10084 &#10084 &#10084">
                 <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.toolitup.com/minimap.html" data-text="Minimap - A JQuery Plugin | JS | toolitup.com" data-hashtags="javascript,jQuery,jQuery-toolitup">Tweet</a>
                 <g:plusone size="tall" data-href="http://www.toolitup.com/minimap.html"></g:plusone>
                 <script src="http://platform.linkedin.com/in.js" type="text/javascript">
-                    lang: en_US
+                lang: en_US
                 </script>
                 <script type="IN/Share" data-url="http://www.toolitup.com/minimap.html" data-counter="top"></script>
                 <div class="fb-like" data-href="http://www.toolitup.com/minimap.html" data-layout="box_count" data-action="like" data-width="60" data-show-faces="true" data-share="false"></div>
             </div>
         </div>
-
         <div class="mi-row mi-fork">
             <span id="forkongithub"><a href="https://github.com/princejwesley/minimap"><i class="fa fa-github"></i> fork me</a></span>
         </div>
-
         <div class="mi-row">
-            <h4 class="mi-description"><i class="fa fa-quote-left"></i>A preview of full webpage or its DOM element with flexible positioning and navigation support<i class="fa fa-quote-right"></i></h4>			
+            <h4 class="mi-description"><i class="fa fa-quote-left"></i>A preview of full webpage or its DOM element with flexible positioning and navigation support<i class="fa fa-quote-right"></i></h4>
         </div>
-
         <div class="mi-demo">
             <h3>Download the latest code</h3>
             <p><a href="https://github.com/princejwesley/minimap">Fork</a> the repository or download js/css files from <a href="https://github.com/princejwesley/minimap/tree/master/dist">dist</a> directory.</p>
@@ -95,22 +87,22 @@
             <pre class="editor-colors lang-javascript"><div class="line"><span class="source js"><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>Desired&nbsp;dom&nbsp;element</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source js"><span class="storage modifier js"><span>var</span></span><span>&nbsp;previewBody&nbsp;</span><span class="keyword operator js"><span>=</span></span><span>&nbsp;$</span><span class="meta brace round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>body</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta brace round js"><span>)</span></span><span class="meta delimiter method period js"><span>.</span></span><span>minimap</span><span class="meta brace round js"><span>(</span><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre>
             <h3 id="properties">Properties</h3>
             <h4 class="slide-property">heightRatio</h4>
-			<div id="hRslider" class="slider"></div>
+            <div id="hRslider" class="slider"></div>
             <blockquote>
                 <p><code>height</code> ratio of the view port. ratio can be in the range [0.0, 1.0). (<em>default: <strong>0.6</strong></em>)</p>
             </blockquote>
             <h4 class="slide-property">widthRatio</h4>
-			<div id="wRslider" class="slider"></div>
+            <div id="wRslider" class="slider"></div>
             <blockquote>
                 <p><code>width</code> ratio of the view port. ratio can be in the range [0.0, 0.5). (<em>default: <strong>0.05</strong></em>)</p>
             </blockquote>
             <h4 class="slide-property">offsetHeightRatio</h4>
-			<div id="ohRslider" class="slider"></div>
+            <div id="ohRslider" class="slider"></div>
             <blockquote>
                 <p>Margin <code>top</code> ratio of the view port. ratio can be in the range (0.0, 0.9]. (<em>default: <strong>0.035</strong></em>)</p>
             </blockquote>
             <h4 class="slide-property">offsetWidthRatio</h4>
-			<div id="owRslider" class="slider"></div>
+            <div id="owRslider" class="slider"></div>
             <blockquote>
                 <p>Margin <code>left</code> or <code>right</code>(<em>based on <code>position</code> property</em>) ratio of the view port. ratio can be in the range (0.0, 0.9]. (<em>default: <strong>0.035</strong></em>)</p>
             </blockquote>
@@ -142,7 +134,7 @@
                 <p>linear <code>animation</code> support for scrolling. (dafault: <em>true</em>)</p>
             </blockquote>
             <h3 class="slide-property">smoothScrollDelay</h3>
-			<div id="smoothDelay1" class="slider"></div>
+            <div id="smoothDelay1" class="slider"></div>
             <blockquote>
                 <p>Smooth scroll delay in milliseconds. (default: 200ms)</p>
             </blockquote>
@@ -156,25 +148,24 @@
             <blockquote>
                 <p>Set <code>position</code> property. <code>position</code> can be either <code>'left'</code> or <code>'right'</code>
                 </p>
-
             </blockquote>
             <h3 class="slide-property slide-wide">function setHeightRatio(ratio)</h3>
-			<div id="hRslider1" class="slider"></div>
+            <div id="hRslider1" class="slider"></div>
             <blockquote>
                 <p>Set <code>heightRatio</code> property.</p>
             </blockquote>
             <h3 class="slide-property slide-wide">function setWidthRatio(ratio)</h3>
-			<div id="wRslider1" class="slider"></div>
+            <div id="wRslider1" class="slider"></div>
             <blockquote>
                 <p>Set <code>widthRatio</code> property.</p>
             </blockquote>
             <h3 class="slide-property slide-wide">function setOffsetHeightRatio(ratio)</h3>
-			<div id="ohRslider1" class="slider"></div>
+            <div id="ohRslider1" class="slider"></div>
             <blockquote>
                 <p>Set <code>offsetHeightRatio</code> property.</p>
             </blockquote>
             <h3 class="slide-property slide-wide">function setOffsetWidthRatio(ratio)</h3>
-			<div id="owRslider1" class="slider"></div>
+            <div id="owRslider1" class="slider"></div>
             <blockquote>
                 <p>Set <code>offsetWidthRatio</code> property.</p>
             </blockquote>
@@ -188,7 +179,7 @@
                 <p>Set <code>smoothScroll</code> property</p>
             </blockquote>
             <h3 class="slide-property slide-wide">function setSmoothScrollDelay(duration)</h3>
-			<div id="smoothDelay" class="slider"></div>
+            <div id="smoothDelay" class="slider"></div>
             <blockquote>
                 <p>Set <code>setSmoothScrollDelay</code> property.</p>
             </blockquote>
@@ -244,34 +235,51 @@
         <div class="mi-row">
         </div>
     </div>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		
-		ga('create', 'UA-55005923-1', 'auto');
-		ga('require', 'displayfeatures');
-		ga('send', 'pageview');		
+    ga('create', 'UA-55005923-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+    </script>
+    <script type="text/javascript">
+    window.___gcfg = {
+        lang: 'en-US'
+    };
 
-	</script>				
-	
-	<script type="text/javascript">
-		window.___gcfg = {
-			lang: 'en-US'
-		}; 
-
-		(function() {
-			var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-			po.src = 'https://apis.google.com/js/plusone.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-		})();
-	</script>
-	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    (function() {
+        var po = document.createElement('script');
+        po.type = 'text/javascript';
+        po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(po, s);
+    })();
+    </script>
+    <script>
+    ! function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, 'script', 'twitter-wjs');
+    </script>
     <script src="assets/js/minimap.min.js"></script>
     <script src="assets/js/toolitup-minimap.min.js"></script>
-
 </body>
 
 </html>

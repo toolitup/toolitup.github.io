@@ -81,7 +81,7 @@ $(function() {
 		min : 0, 
 		max: 359,
 		radius: 100,
-		innerCircleRatio : .7,
+		innerCircleRatio : 0.7,
 		formLabel : function(value, prefix, suffix) {
 			return '<img src="assets/images/baby' + parseInt(value / 23) + '.png"></img>';
 		},

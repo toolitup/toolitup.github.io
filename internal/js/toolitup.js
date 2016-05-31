@@ -23,5 +23,8 @@ $(function () {
 	
 		window.location.href = "/jRate.html";
 	});
-
+	$('#electron-js-item').on('click', function() {
+	
+		window.location.href = "http://www.mancy-re.pl/";
+	});
 });

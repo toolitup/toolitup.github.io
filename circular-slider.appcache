@@ -1,4 +1,6 @@
 CACHE MANIFEST
+
+CACHE:
 http://www.toolitup.com/assets/images/baby0.png
 http://www.toolitup.com/assets/images/baby1.png
 http://www.toolitup.com/assets/images/baby2.png
@@ -15,3 +17,6 @@ http://www.toolitup.com/assets/images/baby12.png
 http://www.toolitup.com/assets/images/baby13.png
 http://www.toolitup.com/assets/images/baby14.png
 http://www.toolitup.com/assets/images/baby15.png
+
+NETWORK:
+*

@@ -135,8 +135,7 @@
         height: 20px;
         line-height: 20px;
         background: white;
-        -webkit-border-radius: 3px;
-                border-radius: 3px;
+        border-radius: 3px;
         border: 1px solid #888;
         text-align: center;
         font-size: 12px;
@@ -364,4 +363,3 @@
     .ui-slider-pips .ui-slider-pip-selected-second {
         color: #E70081;
     }
-/*# sourceMappingURL=jquery-ui-slider-pips.css.map */

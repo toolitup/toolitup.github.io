@@ -24,8 +24,7 @@ html, body {
     touch-action: none;
 }
 .fp-section {
-    position: relative; /* Safari<=5 Android<=3 */
-    -moz-box-sizing: border-box; /* <=28 */
+    position: relative; /* Safari<=5 Android<=3 */ /* <=28 */
     box-sizing: border-box;
 }
 .fp-slide {

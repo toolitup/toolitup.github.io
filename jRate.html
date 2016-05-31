@@ -1,307 +1,428 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-	<title>JRate Rating Plugin - A JQuery Plugin | toolitup.com</title>
-
-	<meta charset="UTF-8">
-	<meta name="description" content="JRate plugin helps to generate rating in different shapes, different size and so on. ">
-	<meta name="robots" content="INDEX, FOLLOW, NOODP" />
-	<meta name="keywords" content="rating, star rating, jquery plugin, rating jquery, jrate" > 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="viewport" content="width=device-width, initial-scale=0.25, minimum-scale=0.1, maximum-scale=2.0, user-scalable=1" />
-
-	<meta property="og:title" content="JRate Rating Plugin - A JQuery Plugin | toolitup.com" />
-	<meta property="og:image" content="assets/images/logo.png" />
-	<meta property="og:description" content="JRate plugin helps to generate rating in different shapes, different size and so on." />
-	<meta property="og:site_name" content="toolitup" />
-
-    <link rel="canonical" href="http://www.toolitup.com/jRate.html" />	
-	<link rel="shortcut icon" href="/favicon.png" type="image/png">
-	<link rel="icon" href="/favicon.png" type="image/png">
-	
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/toolitup-jrate.css" />
-	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>JRate Rating Plugin - A JQuery Plugin | toolitup.com</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="JRate plugin helps to generate rating in different shapes, different size and so on. ">
+    <meta name="robots" content="INDEX, FOLLOW, NOODP" />
+    <meta name="keywords" content="rating, star rating, jquery plugin, rating jquery, jrate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=0.25, minimum-scale=0.1, maximum-scale=2.0, user-scalable=1" />
+    <meta property="og:title" content="JRate Rating Plugin - A JQuery Plugin | toolitup.com" />
+    <meta property="og:image" content="assets/images/logo.png" />
+    <meta property="og:description" content="JRate plugin helps to generate rating in different shapes, different size and so on." />
+    <meta property="og:site_name" content="toolitup" />
+    <link rel="canonical" href="http://www.toolitup.com/jRate.html" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/toolitup-jrate.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
+
 <body>
-	<div class="container">
-		<div class="jr-row">	
-			<a href="http://www.toolitup.com" class="t-logo">
-				<img src="assets/images/logo.png" alt="ToolitUp.com" >
-			</a>
-			<div class='jr-header'>
-				<h3 class="jr-title">$ JRate Rating | A JQuery Plugin</h3>
-			</div>
-		
-			<div class='t-social'> 
-				<a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.toolitup.com/jRate.html" data-text="JRate - Jquery Rating Plugin | toolitup.com" data-hashtags="javascript,jQuery,jQuery-toolitup,rating,plugins">Tweet</a>
-			</div>
-		</div>
-		<style>#forkongithub a{background:#696969;color:#fff;text-decoration:none;font-family:arial,sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1rem;line-height:2rem;position:relative;transition:0.5s;}#forkongithub a:hover{background:#44c244;color:#fff;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#forkongithub{position:fixed;display:block;top:-9px;right: -9px;width:170px;overflow:hidden;height:200px;z-index:9999;}#forkongithub a{width:170px;position:absolute;top:60px;right:-60px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);box-shadow:4px 4px 6px rgba(0,0,0,0.8);}}</style><span id="forkongithub"><a href="https://github.com/senthilporunan/jRate" target="_blank">Fork me on GitHub</a></span>
-		<div class="jr-main">
-			<h3 class="jr-title">JRate</h3>
-			<div id="demo-main"></div>
-			<div id="demo-main-value"></div>
-			<ul>
-				<li>This jquery plugin helps to generate RATING with various features. Download and include this plugin in your html file.</li>
-			</ul>
-		</div>
-		<div class="jr-main">
-			<h3 class="jr-title">Including it on your page</h3>
-			<ul>
-				<li>Include jQuery and this plugin on a page.</li>
-				<li>
-					<pre class="editor-colors lang-html"><div class="line"><span class="text html basic"><span class="source js embedded html"><span>&nbsp;&nbsp;</span><span class="punctuation definition tag html"><span>&lt;</span></span><span class="entity name tag script html"><span>script</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>src</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>"</span></span><span>jRate.js</span><span class="punctuation definition string end html"><span>"</span></span></span><span class="punctuation definition tag html"><span>&gt;</span><span>&lt;/</span></span><span class="entity name tag script html"><span>script</span></span><span class="punctuation definition tag html"><span>&gt;</span></span><span>&nbsp;</span></span></span></div></pre>
-				</li>
-			</ul>
-		</div>
-		<div class="jr-main">
-			<h3 class="jr-title">Basic Usage</h3>
-			<ul>
-				<li>
-					<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;div&nbsp;id="jRate"&gt;&lt;/div&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>$("#jRate").jRate();</span></span></span></div></pre>
-				</li>
-			</ul>
-		</div>
-		<div class="jr-main">
-			<h3 class="jr-title">Start Color and End Color</h3>
-			<span class="jr-default">default: startColor: 'yellow'; endColor: 'green'</span>
-			<ul>
-				<li>Set your favourite start and end color. By giving value in the form of hex value, rgb value or standard color name. We can use 
-one color format also by giving same start and end color.</li>
-				<li><div id="demo-color"></div><div id="demo-color-value"></div></li>
-				<li><pre><code>
+    <div class="container">
+        <div class="jr-row">
+            <a href="http://www.toolitup.com" class="t-logo">
+                <img src="assets/images/logo.png" alt="ToolitUp.com">
+            </a>
+            <div class='jr-header'>
+                <h3 class="jr-title">$ JRate Rating | A JQuery Plugin</h3>
+            </div>
+            <div class='t-social'>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.toolitup.com/jRate.html" data-text="JRate - Jquery Rating Plugin | toolitup.com" data-hashtags="javascript,jQuery,jQuery-toolitup,rating,plugins">Tweet</a>
+            </div>
+        </div>
+        <style>
+        #forkongithub a {
+            background: #696969;
+            color: #fff;
+            text-decoration: none;
+            font-family: arial, sans-serif;
+            text-align: center;
+            font-weight: bold;
+            padding: 5px 40px;
+            font-size: 1rem;
+            line-height: 2rem;
+            position: relative;
+            transition: 0.5s;
+        }
+        
+        #forkongithub a:hover {
+            background: #44c244;
+            color: #fff;
+        }
+        
+        #forkongithub a::before,
+        #forkongithub a::after {
+            content: "";
+            width: 100%;
+            display: block;
+            position: absolute;
+            top: 1px;
+            left: 0;
+            height: 1px;
+            background: #fff;
+        }
+        
+        #forkongithub a::after {
+            bottom: 1px;
+            top: auto;
+        }
+        
+        @media screen and (min-width:800px) {
+            #forkongithub {
+                position: fixed;
+                display: block;
+                top: -9px;
+                right: -9px;
+                width: 170px;
+                overflow: hidden;
+                height: 200px;
+                z-index: 9999;
+            }
+            #forkongithub a {
+                width: 170px;
+                position: absolute;
+                top: 60px;
+                right: -60px;
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
+            }
+        }
+        </style><span id="forkongithub"><a href="https://github.com/senthilporunan/jRate" target="_blank">Fork me on GitHub</a></span>
+        <div class="jr-main">
+            <h3 class="jr-title">JRate</h3>
+            <div id="demo-main"></div>
+            <div id="demo-main-value"></div>
+            <ul>
+                <li>This jquery plugin helps to generate RATING with various features. Download and include this plugin in your html file.</li>
+            </ul>
+        </div>
+        <div class="jr-main">
+            <h3 class="jr-title">Including it on your page</h3>
+            <ul>
+                <li>Include jQuery and this plugin on a page.</li>
+                <li>
+                    <pre class="editor-colors lang-html"><div class="line"><span class="text html basic"><span class="source js embedded html"><span>&nbsp;&nbsp;</span><span class="punctuation definition tag html"><span>&lt;</span></span><span class="entity name tag script html"><span>script</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>src</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>"</span></span><span>jRate.js</span><span class="punctuation definition string end html"><span>"</span></span></span><span class="punctuation definition tag html"><span>&gt;</span><span>&lt;/</span></span><span class="entity name tag script html"><span>script</span></span><span class="punctuation definition tag html"><span>&gt;</span></span><span>&nbsp;</span></span></span></div></pre>
+                </li>
+            </ul>
+        </div>
+        <div class="jr-main">
+            <h3 class="jr-title">Basic Usage</h3>
+            <ul>
+                <li>
+                    <pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;div&nbsp;id="jRate"&gt;&lt;/div&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>$("#jRate").jRate();</span></span></span></div></pre>
+                </li>
+            </ul>
+        </div>
+        <div class="jr-main">
+            <h3 class="jr-title">Start Color and End Color</h3>
+            <span class="jr-default">default: startColor: 'yellow'; endColor: 'green'</span>
+            <ul>
+                <li>Set your favourite start and end color. By giving value in the form of hex value, rgb value or standard color name. We can use one color format also by giving same start and end color.</li>
+                <li>
+                    <div id="demo-color"></div>
+                    <div id="demo-color-value"></div>
+                </li>
+                <li><pre><code>
 	$("#jRate").jRate({
 		startColor: 'cyan',
 		endColor: 'blue'
 	});</code></pre></li>
-			</ul>
-		</div>
-		<div class="jr-main">
-			<h3 class="jr-title">Initial Value</h3>
-			<span class="jr-default">default: rating: 0</span>
-			<ul>
-				<li>We can set the default initial value for rating.</li>
-				<li><div id="demo-rating" ></div><div id="demo-rating-value"></div></li>
-				<li><pre><code>
+            </ul>
+        </div>
+        <div class="jr-main">
+            <h3 class="jr-title">Initial Value</h3>
+            <span class="jr-default">default: rating: 0</span>
+            <ul>
+                <li>We can set the default initial value for rating.</li>
+                <li>
+                    <div id="demo-rating"></div>
+                    <div id="demo-rating-value"></div>
+                </li>
+                <li><pre><code>
 	$("#jRate").jRate({
 		rating: 1
 	});</code></pre></li>
-			</ul>
-		</div>
-		<div class="jr-main">
-			<h3 class="jr-title">Width and Height</h3>
-			<span class="jr-default">default: width: 20; height: 20</span>
-			<ul>
-				<li>We can customize our own value for width and height. </li>
-				<li><div id="demo-width" ></div><div id="demo-width-value"></div></li>
-				<li><pre><code>
+            </ul>
+        </div>
+        <div class="jr-main">
+            <h3 class="jr-title">Width and Height</h3>
+            <span class="jr-default">default: width: 20; height: 20</span>
+            <ul>
+                <li>We can customize our own value for width and height. </li>
+                <li>
+                    <div id="demo-width"></div>
+                    <div id="demo-width-value"></div>
+                </li>
+                <li><pre><code>
 	$("#jRate").jRate({
 		width: 60,
 		height: 60
 	});</code></pre></li>
-			</ul>
-		</div>
-		<div class="jr-main">
-			<h3 class="jr-title">Shape</h3>
-			<span class="jr-default">default: shape: 'STAR'</span>
-			<ul>
-				<li>We can chooose shape from available list. If you need more shapes, raise feature request in github. Available shapes 
-				are STAR, FOOD, TWITTER, BULB, RECTANGLE, CIRCLE, RHOMBUS, TRIANGLE. </li>
-				<li><div id="demo-shape" style="padding-right: 40px;"></div>
-					<div id="demo-shape-twitter" style="padding-right: 40px;"></div>
-					<div id="demo-shape-bulb" style="padding-right: 40px;"></div>
-				</li>
-				<li><pre><code>
+            </ul>
+        </div>
+        <div class="jr-main">
+            <h3 class="jr-title">Shape</h3>
+            <span class="jr-default">default: shape: 'STAR'</span>
+            <ul>
+                <li>We can chooose shape from available list. If you need more shapes, raise feature request in github. Available shapes are STAR, FOOD, TWITTER, BULB, RECTANGLE, CIRCLE, RHOMBUS, TRIANGLE. </li>
+                <li>
+                    <div id="demo-shape" style="padding-right: 40px;"></div>
+                    <div id="demo-shape-twitter" style="padding-right: 40px;"></div>
+                    <div id="demo-shape-bulb" style="padding-right: 40px;"></div>
+                </li>
+                <li><pre><code>
 	$("#jRate").jRate({
 		shape: 'FOOD'
-	});</code></pre></li>	
-			</ul>
-		</div>
-		<div class="jr-main">
-			<h3 class="jr-title">Width and Height Growth</h3>
-			<span class="jr-default">default: widthGrowth: 0; heightGrowth: 0</span>
-			<ul>
-				<li>Make the shapes from smaller to bigger. We can use growth field to make this happen. </li>
-				<li><div id="demo-width-growth" ></div><div id="demo-width-growth-value"></div></li>
-				<li><pre><code>
+	});</code></pre></li>
+            </ul>
+        </div>
+        <div class="jr-main">
+            <h3 class="jr-title">Width and Height Growth</h3>
+            <span class="jr-default">default: widthGrowth: 0; heightGrowth: 0</span>
+            <ul>
+                <li>Make the shapes from smaller to bigger. We can use growth field to make this happen. </li>
+                <li>
+                    <div id="demo-width-growth"></div>
+                    <div id="demo-width-growth-value"></div>
+                </li>
+                <li><pre><code>
 	$("#jRate").jRate({
 		widthGrowth: 0.2,
 		heightGrowth: 0.2
 	});</code></pre></li>
-			</ul>
-		</div>
-		<div class="jr-main">
-			<h3 class="jr-title">Count</h3>
-			<span class="jr-default">default: count: 5</span>
-			<ul>
-				<li>Number of shapes was decided by the count parameter. We can customize own numeric value for it. </li>
-				<li><div id="demo-count" ></div><div id="demo-count-value"></div></li>
-				<li><pre><code>
+            </ul>
+        </div>
+        <div class="jr-main">
+            <h3 class="jr-title">Count</h3>
+            <span class="jr-default">default: count: 5</span>
+            <ul>
+                <li>Number of shapes was decided by the count parameter. We can customize own numeric value for it. </li>
+                <li>
+                    <div id="demo-count"></div>
+                    <div id="demo-count-value"></div>
+                </li>
+                <li><pre><code>
 	$("#jRate").jRate({
 		count: 10
 	});</code></pre></li>
-			</ul>
-		</div>
-		<div class="jr-main">
-			<h3 class="jr-title">Background Color</h3>
-			<span class="jr-default">default: backgroundColor: 'white'</span>
-			<ul>
-				<li>Set your favourite background color. By giving value in the form of hex value, rgb value or standard color name.</li>
-				<li><div id="demo-bg-color" ></div><div id="demo-bg-color-value"></div></li>
-				<li><pre><code>
+            </ul>
+        </div>
+        <div class="jr-main">
+            <h3 class="jr-title">Background Color</h3>
+            <span class="jr-default">default: backgroundColor: 'white'</span>
+            <ul>
+                <li>Set your favourite background color. By giving value in the form of hex value, rgb value or standard color name.</li>
+                <li>
+                    <div id="demo-bg-color"></div>
+                    <div id="demo-bg-color-value"></div>
+                </li>
+                <li><pre><code>
 	$("#jRate").jRate({
 		backgroundColor: 'black'
 	});</code></pre></li>
-			</ul>
-		</div>
-		<div class="jr-main">
-			<h3 class="jr-title">Gap</h3>
-			<span class="jr-default">default: shapeGap: 0px</span>
-			<ul>
-				<li>We can set our own gap between two shapes. We can customize our own values in it. </li>
-				<li><div id="demo-gap"></div><div id="demo-gap-value"></div></li>
-				<li><pre><code>
+            </ul>
+        </div>
+        <div class="jr-main">
+            <h3 class="jr-title">Gap</h3>
+            <span class="jr-default">default: shapeGap: 0px</span>
+            <ul>
+                <li>We can set our own gap between two shapes. We can customize our own values in it. </li>
+                <li>
+                    <div id="demo-gap"></div>
+                    <div id="demo-gap-value"></div>
+                </li>
+                <li><pre><code>
 	$("#jRate").jRate({
 		shapeGap: '10px'
 	});</code></pre></li>
-			</ul>
-		</div>
-		<div class="jr-main">
-			<h3 class="jr-title">Opacity</h3>
-			<span class="jr-default">default: opacity: 1</span>
-			<ul>
-				<li>Set opacity value.</li>
-				<li><div id="demo-opacity"></div><div id="demo-opacity-value"></div></li>
-				<li><pre><code>
+            </ul>
+        </div>
+        <div class="jr-main">
+            <h3 class="jr-title">Opacity</h3>
+            <span class="jr-default">default: opacity: 1</span>
+            <ul>
+                <li>Set opacity value.</li>
+                <li>
+                    <div id="demo-opacity"></div>
+                    <div id="demo-opacity-value"></div>
+                </li>
+                <li><pre><code>
 	$("#jRate").jRate({
 		opacity: 0.3
 	});</code></pre></li>
-			</ul>
-		</div>
-		<div class="jr-main">
-			<h3 class="jr-title">Minimum and Maximum Value</h3>
-			<span class="jr-default">default: min: 0; max: 5</span>
-			<ul>
-				<li>Set a desired minimum and maximum value. </li>
-				<li><div id="demo-min-max"></div><div id="demo-min-max-value"></div></li>
-				<li><pre><code>
+            </ul>
+        </div>
+        <div class="jr-main">
+            <h3 class="jr-title">Minimum and Maximum Value</h3>
+            <span class="jr-default">default: min: 0; max: 5</span>
+            <ul>
+                <li>Set a desired minimum and maximum value. </li>
+                <li>
+                    <div id="demo-min-max"></div>
+                    <div id="demo-min-max-value"></div>
+                </li>
+                <li><pre><code>
 	$("#jRate").jRate({
 		min: 10,
 		max: 15
 	});</code></pre></li>
-			</ul>
-		</div>
-		<div class="jr-main">
-			<h3 class="jr-title">Minimum Selected Value</h3>
-			<span class="jr-default">default: minSelected: 0</span>
-			<ul>
-				<li>Set the minimum selected value. Restrict user not able to select minimum this mentioned value.</li>
-				<li><div id="demo-min-selected" ></div><div id="demo-min-selected-value"></div></li>
-				<li><pre><code>
+            </ul>
+        </div>
+        <div class="jr-main">
+            <h3 class="jr-title">Minimum Selected Value</h3>
+            <span class="jr-default">default: minSelected: 0</span>
+            <ul>
+                <li>Set the minimum selected value. Restrict user not able to select minimum this mentioned value.</li>
+                <li>
+                    <div id="demo-min-selected"></div>
+                    <div id="demo-min-selected-value"></div>
+                </li>
+                <li><pre><code>
 	$("#jRate").jRate({
 		minSelected: 3
 	});</code></pre></li>
-			</ul>
-		</div>
-		<div class="jr-main">
-			<h3 class="jr-title">Precision</h3>
-			<span class="jr-default">default: precision: 0.1</span>
-			<ul>
-				<li>Set the precision value.</li>
-				<li><div id="demo-precision" ></div><div id="demo-precision-value"></div></li>
-				<li><pre><code>
+            </ul>
+        </div>
+        <div class="jr-main">
+            <h3 class="jr-title">Precision</h3>
+            <span class="jr-default">default: precision: 0.1</span>
+            <ul>
+                <li>Set the precision value.</li>
+                <li>
+                    <div id="demo-precision"></div>
+                    <div id="demo-precision-value"></div>
+                </li>
+                <li><pre><code>
 	$("#jRate").jRate({
 		precision: 0.5
 	});</code></pre></li>
-			</ul>
-		</div>
-		<div class="jr-main">
-			<h3 class="jr-title">Horizontal</h3>
-			<span class="jr-default">default: horizontal: true</span>
-			<ul>
-				<li>We can set a boolean variable to make horizontal or vertical. And, set a boolean value for reverse. </li>
-				<li><div id="demo-horizontal"></div></li>
-				<li><pre><code>
+            </ul>
+        </div>
+        <div class="jr-main">
+            <h3 class="jr-title">Horizontal</h3>
+            <span class="jr-default">default: horizontal: true</span>
+            <ul>
+                <li>We can set a boolean variable to make horizontal or vertical. And, set a boolean value for reverse. </li>
+                <li>
+                    <div id="demo-horizontal"></div>
+                </li>
+                <li><pre><code>
 	$("#jRate").jRate({
 		horizontal: false
 	});</code></pre></li>
-			</ul>
-		</div>
-		<div class="jr-main">
-			<h3 class="jr-title">Reverse</h3>
-			<span class="jr-default">default: reverse: false</span>
-			<ul>
-				<li>We can set a boolean variable to make reverse or not. </li>
-				<li><div id="demo-reverse"></div><div id="demo-reverse-value"></div></li>
-				<li><pre><code>
+            </ul>
+        </div>
+        <div class="jr-main">
+            <h3 class="jr-title">Reverse</h3>
+            <span class="jr-default">default: reverse: false</span>
+            <ul>
+                <li>We can set a boolean variable to make reverse or not. </li>
+                <li>
+                    <div id="demo-reverse"></div>
+                    <div id="demo-reverse-value"></div>
+                </li>
+                <li><pre><code>
 	$("#jRate").jRate({
 		reverse: true
 	});</code></pre></li>
-			</ul>
-		</div>
-		<div class="jr-main">
-			<h3 class="jr-title">ReadOnly</h3>
-			<span class="jr-default">default: readOnly: false</span>
-			<ul>
-				<li>Set the readonly value.</li>
-				<li><div id="demo-readonly"></div><div id="demo-readonly-value"></div></li>
-				<li><pre><code>
+            </ul>
+        </div>
+        <div class="jr-main">
+            <h3 class="jr-title">ReadOnly</h3>
+            <span class="jr-default">default: readOnly: false</span>
+            <ul>
+                <li>Set the readonly value.</li>
+                <li>
+                    <div id="demo-readonly"></div>
+                    <div id="demo-readonly-value"></div>
+                </li>
+                <li><pre><code>
 	$("#jRate").jRate({
 		readOnly: true
 	});</code></pre></li>
-			</ul>
-		</div>
-		<div class="jr-main">
-			<h3 class="jr-title">onChange</h3>
-			<ul>
-				<li>Write your own methods to do own action when the rating value change action occurs.</li>
-				<li><div id="demo-onchange"></div><div id="demo-onchange-value"></div></li>
-				<li><pre><code>
+            </ul>
+        </div>
+        <div class="jr-main">
+            <h3 class="jr-title">onChange</h3>
+            <ul>
+                <li>Write your own methods to do own action when the rating value change action occurs.</li>
+                <li>
+                    <div id="demo-onchange"></div>
+                    <div id="demo-onchange-value"></div>
+                </li>
+                <li><pre><code>
 	$("#jRate").jRate({
 		onChange: function(rating) {
 			$('#demo-onchange-value').text("Your Rating: "+rating);
 		}
 	});</code></pre></li>
-			</ul>
-		</div>
-		<div class="jr-main">
-			<h3 class="jr-title">onSet</h3>
-			<ul>
-				<li>Write your own methods to do own action when the rating value click or set action occurs.</li>
-				<li><div id="demo-onset"></div><div id="demo-onset-value"></div></li>
-				<li><pre><code>
+            </ul>
+        </div>
+        <div class="jr-main">
+            <h3 class="jr-title">onSet</h3>
+            <ul>
+                <li>Write your own methods to do own action when the rating value click or set action occurs.</li>
+                <li>
+                    <div id="demo-onset"></div>
+                    <div id="demo-onset-value"></div>
+                </li>
+                <li><pre><code>
 	$("#jRate").jRate({
 		onSet: function(rating) {
 			$('#demo-onset-value').text("Selected Rating: "+rating);
 		}
 	});</code></pre></li>
-			</ul>
-		</div>
-		<div class="jr-main">
-			<h3 class="jr-title">License</h3>
-			<ul>
-				<li>This plugin is licensed under the <a href="https://github.com/senthilporunan/jRate/blob/master/LICENSE">MIT license</a>.</li>
-				<li>Copyright (c) 2015 <a href="http://www.toolitup.com">Senthil Porunan</a></li>
-			</ul>
-			<p id="forkgithub" ><a href="https://github.com/senthilporunan/jRate"><i class="fa fa-github"></i> fork me</a></p>
-		</div>
-	</div>
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		
-		ga('create', 'UA-55005923-1', 'auto');
-		ga('require', 'displayfeatures');
-		ga('send', 'pageview');		
+            </ul>
+        </div>
+        <div class="jr-main">
+            <h3 class="jr-title">License</h3>
+            <ul>
+                <li>This plugin is licensed under the <a href="https://github.com/senthilporunan/jRate/blob/master/LICENSE">MIT license</a>.</li>
+                <li>Copyright (c) 2015 <a href="http://www.toolitup.com">Senthil Porunan</a></li>
+            </ul>
+            <p id="forkgithub"><a href="https://github.com/senthilporunan/jRate"><i class="fa fa-github"></i> fork me</a></p>
+        </div>
+    </div>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-	</script>
-	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-	<script src="assets/js/jRate.min.js"></script>
-	<script src="assets/js/toolitup-jrate.min.js"></script>	
+    ga('create', 'UA-55005923-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+    </script>
+    <script>
+    ! function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, 'script', 'twitter-wjs');
+    </script>
+    <script src="assets/js/jRate.min.js"></script>
+    <script src="assets/js/toolitup-jrate.min.js"></script>
 </body>
+
 </html>

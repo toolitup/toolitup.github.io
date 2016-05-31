@@ -16,26 +16,21 @@
   "homepage": "http://www.toolitup.com/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/openshift/origin-server"
-  },
-  "engines": {
-    "node": ">= 0.6.0",
-    "npm": ">= 1.0.0"
+    "url": "https://github.com/toolitup/toolitup.github.io"
   },
   "dependencies": {
-    "express": "~3.4.4",
-    "lodash": "*",
-    "uglify-js": "*"
+    "lodash": "^3.10.0"
   },
   "devDependencies": {
+    "uglify-js": "*",
     "grunt": "~0.4.5",
-    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-nodeunit": "~0.4.1",
     "grunt-contrib-uglify": "~0.5.0",
     "grunt-postcss": "~0.1.0",
-    "grunt-contrib-cssmin": "*"
+    "grunt-contrib-cssmin": "*",
+    "grunt-autoprefixer": "3.0.4"
   },
   "bundleDependencies": [],
-  "private": true,
-  "main": "server.js"
+  "private": true
 }

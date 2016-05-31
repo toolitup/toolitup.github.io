@@ -1,91 +1,91 @@
 <!DOCTYPE HTML>
 <html manifest="/circular-slider.appcache">
 <head>
-	<title> Circular Slider - A JQuery Plugin | JS | toolitup.com</title>
+    <title> Circular Slider - A JQuery Plugin | JS | toolitup.com</title>
 
-	<meta charset="UTF-8">
-	<meta name="description" content="Circular slider is a jQuery plugin for range values and image carousel. It supports half and full circluar sliders.">
-	<meta name="robots" content="INDEX, FOLLOW, NOODP" />
-	<meta name="keywords" content="jquery, slider, circular slider, circular-slider.js, image carousel, half circle, github/circular-slider" > 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="viewport" content="width=device-width, initial-scale=0.25, minimum-scale=0.1, maximum-scale=2.0, user-scalable=1" />
-	<meta property="og:title" content="Circular Slider - A JQuery Plugin | JS | toolitup.com" />
-	<meta property="og:image" content="/assets/images/logo.png" />
-	<meta property="og:description" content="Circular slider is a jquery plugin for range values and image carousel. It supports half and full circluar sliders." />
-	<meta property="og:site_name" content="toolitup" />
-	
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="canonical" href="http://www.toolitup.com/circular-slider.html" />	
-	<link rel="shortcut icon" href="/favicon.png" type="image/png">
-	<link rel="icon" href="/favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="description" content="Circular slider is a jQuery plugin for range values and image carousel. It supports half and full circluar sliders.">
+    <meta name="robots" content="INDEX, FOLLOW, NOODP" />
+    <meta name="keywords" content="jquery, slider, circular slider, circular-slider.js, image carousel, half circle, github/circular-slider" > 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=0.25, minimum-scale=0.1, maximum-scale=2.0, user-scalable=1" />
+    <meta property="og:title" content="Circular Slider - A JQuery Plugin | JS | toolitup.com" />
+    <meta property="og:image" content="assets/images/logo.png" />
+    <meta property="og:description" content="Circular slider is a jquery plugin for range values and image carousel. It supports half and full circluar sliders." />
+    <meta property="og:site_name" content="toolitup" />
+    
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="canonical" href="http://www.toolitup.com/circular-slider.html" />    
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="icon" href="favicon.png" type="image/png">
 
-	<link rel="stylesheet" href="/assets/css/circular-slider.min.css" />
-	<link rel="stylesheet" href="/assets/css/toolitup-circular-slider.css" />
-	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>	
-	<script src="/assets/js/jquery.ui.touch-punch.min.js"></script>
-	
+    <link rel="stylesheet" href="assets/css/circular-slider.min.css" />
+    <link rel="stylesheet" href="assets/css/toolitup-circular-slider.css" />
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>    
+    <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+    
 </head>
 
 <body>
-	<div id="fb-root"> </div>
-	<script>
-		window.fbAsyncInit = function() {
-			FB.init({
-			appId      : '791808880883628',
-			xfbml      : true,
-			version    : 'v2.1'
-			});
-		};
-		
-		(function(d, s, id){
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) {return;}
-			js = d.createElement(s); js.id = id;
-			js.src = "http://connect.facebook.net/en_US/sdk.js";
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-	</script>
+    <div id="fb-root"> </div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+            appId      : '791808880883628',
+            xfbml      : true,
+            version    : 'v2.1'
+            });
+        };
+        
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "http://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 
-		
-	<div class="cs-container">
-		<div class="cs-row">			
-			<a href="http://www.toolitup.com" class="t-logo">
-				<img src="/assets/images/logo.png" alt="ToolitUp.com" >
-			</a>
-			<div class='cs-header'>
-				<h3 class="cs-prefix">$</h3>
-				<h3 class="cs-title">Circular Slider </h3>
-				<h3 class="cs-connect">|</h3>
-				<h3 class="cs-title">A JQuery Plugin</h3>
-			</div>
-	
-			<div class='t-social' data-like="&#10084 &#10084 &#10084"> 
-				<a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.toolitup.com/circular-slider.html" data-text="Circular Slider - A JQuery Plugin | JS | toolitup.com" data-hashtags="javascript,jQuery,jQuery-toolitup">Tweet</a>
-				<g:plusone size="tall" data-href="http://www.toolitup.com/circular-slider.html" ></g:plusone>	
-				<script src="http://platform.linkedin.com/in.js" type="text/javascript">
-					lang: en_US
-				</script>
-				<script type="IN/Share" data-url="http://www.toolitup.com/circular-slider.html" data-counter="top"></script>
-				<div class="fb-like" data-href="http://www.toolitup.com/circular-slider.html" data-layout="box_count" data-action="like" data-width="60" data-show-faces="true" data-share="false"></div>	
-			</div>
-		</div>
-		<ul id="menu">
-			<li data-menuanchor="cs-demo-1"><span data-link="#FullCircle">Circle</span></li>
-			<li data-menuanchor="cs-demo-2"><span data-link="#HalfCircle">1/2 Circle</span></li>
-			<li data-menuanchor="cs-demo-3"><span data-link="#HalfCircleRight">1/2 Circle Right</span></li>
-			<li data-menuanchor="cs-demo-4"><span data-link="#HalfCircleLeft">1/2 Circle Left</span></li>
-			<li data-menuanchor="cs-demo-5"><span data-link="#HalfCircleBottom">1/2 Circle Bottom</span></li>
-			<li data-menuanchor="cs-demo-6"><span data-link="#Customized">Image Carousel</a></li>
-		</ul>
-		<div class="cs-demo">		
-		
-			<div class='cs-demo-1'>
-				<div id='slider-full'> 
-				</div>
-				<code class='cs-jscode'>
-					<pre>
+        
+    <div class="cs-container">
+        <div class="cs-row">            
+            <a href="http://www.toolitup.com" class="t-logo">
+                <img src="assets/images/logo.png" alt="ToolitUp.com" >
+            </a>
+            <div class='cs-header'>
+                <h3 class="cs-prefix">$</h3>
+                <h3 class="cs-title">Circular Slider </h3>
+                <h3 class="cs-connect">|</h3>
+                <h3 class="cs-title">A JQuery Plugin</h3>
+            </div>
+    
+            <div class='t-social' data-like="&#10084 &#10084 &#10084"> 
+                <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://www.toolitup.com/circular-slider.html" data-text="Circular Slider - A JQuery Plugin | JS | toolitup.com" data-hashtags="javascript,jQuery,jQuery-toolitup">Tweet</a>
+                <g:plusone size="tall" data-href="http://www.toolitup.com/circular-slider.html" ></g:plusone>   
+                <script src="http://platform.linkedin.com/in.js" type="text/javascript">
+                    lang: en_US
+                </script>
+                <script type="IN/Share" data-url="http://www.toolitup.com/circular-slider.html" data-counter="top"></script>
+                <div class="fb-like" data-href="http://www.toolitup.com/circular-slider.html" data-layout="box_count" data-action="like" data-width="60" data-show-faces="true" data-share="false"></div>   
+            </div>
+        </div>
+        <ul id="menu">
+            <li data-menuanchor="cs-demo-1"><span data-link="#FullCircle">Circle</span></li>
+            <li data-menuanchor="cs-demo-2"><span data-link="#HalfCircle">1/2 Circle</span></li>
+            <li data-menuanchor="cs-demo-3"><span data-link="#HalfCircleRight">1/2 Circle Right</span></li>
+            <li data-menuanchor="cs-demo-4"><span data-link="#HalfCircleLeft">1/2 Circle Left</span></li>
+            <li data-menuanchor="cs-demo-5"><span data-link="#HalfCircleBottom">1/2 Circle Bottom</span></li>
+            <li data-menuanchor="cs-demo-6"><span data-link="#Customized">Image Carousel</a></li>
+        </ul>
+        <div class="cs-demo">       
+        
+            <div class='cs-demo-1'>
+                <div id='slider-full'> 
+                </div>
+                <code class='cs-jscode'>
+                    <pre>
 <span class='js-keyword'>
 var </span>circularSlider = $(<span class='js-literal'>'#slider'</span>).CircularSlider({ 
     min : <span class='js-value'>0</span>, 
@@ -96,19 +96,19 @@ var </span>circularSlider = $(<span class='js-literal'>'#slider'</span>).Circula
         ui.next().css({<span class='js-literal'>'background'</span> : <span class='js-value'>'linear-gradient('</span> + value + 
             <span class='js-value'>'deg, white, cornsilk, white)'</span>});
     }
-});	
-					</pre>
-				</code>
-			</div>
-			
-		</div>
-		<div class="cs-demo">		
-		
-			<div class='cs-demo-2'>
-				<div id='slider-half-circle'> 
-				</div>
-				<code class='cs-jscode'>
-					<pre>
+}); 
+                    </pre>
+                </code>
+            </div>
+            
+        </div>
+        <div class="cs-demo">       
+        
+            <div class='cs-demo-2'>
+                <div id='slider-half-circle'> 
+                </div>
+                <code class='cs-jscode'>
+                    <pre>
 <span class='js-keyword'>
 var </span>halfCircularSlider = $(<span class='js-literal'>'#slider'</span>).CircularSlider({ 
   min : <span class='js-value'>0</span>, 
@@ -120,22 +120,22 @@ var </span>halfCircularSlider = $(<span class='js-literal'>'#slider'</span>).Cir
     if (value < 50) {
       ui.next().css({<span class='js-literal'>'background'</span> : <span class='js-value'>'rgba(250, 81, 81,'</span> + ((100 - value) / 100) + <span class='js-value'>')'</span>});
     } else {
-      ui.next().css({<span class='js-literal'>'background'</span> : <span class='js-value'>'rgba(87, 250, 87,'</span> + (value / 100) + <span class='js-value'>')'</span>});			
+      ui.next().css({<span class='js-literal'>'background'</span> : <span class='js-value'>'rgba(87, 250, 87,'</span> + (value / 100) + <span class='js-value'>')'</span>});            
     }
   }
-});	
-					</pre>
-				</code>
-			</div>
-			
-		</div>
-		<div class="cs-demo">		
-		
-			<div class='cs-demo-3'>
-				<div id='slider-half-circle-right'> 
-				</div>
-				<code class='cs-jscode'>
-					<pre>
+}); 
+                    </pre>
+                </code>
+            </div>
+            
+        </div>
+        <div class="cs-demo">       
+        
+            <div class='cs-demo-3'>
+                <div id='slider-half-circle-right'> 
+                </div>
+                <code class='cs-jscode'>
+                    <pre>
 <span class='js-keyword'>
 var </span>halfRightCircularSlider = $(<span class='js-literal'>'#slider'</span>).CircularSlider({ 
   min : <span class='js-value'>0</span>, 
@@ -150,22 +150,22 @@ var </span>halfRightCircularSlider = $(<span class='js-literal'>'#slider'</span>
     } else if (value <= 80) {
       ui.next().css({<span class='js-literal'>'background'</span> : <span class='js-value'>'rgba(87, 250, 87,'</span> + alpha + <span class='js-value'>')'</span>});
     } else {
-      ui.next().css({<span class='js-literal'>'background'</span> : <span class='js-value'>'rgba(250, 81, 81,'</span> + alpha + <span class='js-value'>')'</span>});			
+      ui.next().css({<span class='js-literal'>'background'</span> : <span class='js-value'>'rgba(250, 81, 81,'</span> + alpha + <span class='js-value'>')'</span>});            
     }
   }
-});	
-					</pre>
-				</code>
-			</div>
-			
-		</div>
-		<div class="cs-demo">		
-		
-			<div class='cs-demo-4'>
-				<div id='slider-half-circle-left'> 
-				</div>
-				<code class='cs-jscode'>
-					<pre>
+}); 
+                    </pre>
+                </code>
+            </div>
+            
+        </div>
+        <div class="cs-demo">       
+        
+            <div class='cs-demo-4'>
+                <div id='slider-half-circle-left'> 
+                </div>
+                <code class='cs-jscode'>
+                    <pre>
 <span class='js-keyword'>
 var </span>halfLeftCircularSlider = $(<span class='js-literal'>'#slider'</span>).CircularSlider({ 
   min : <span class='js-value'>0</span>, 
@@ -180,22 +180,22 @@ var </span>halfLeftCircularSlider = $(<span class='js-literal'>'#slider'</span>)
     } else if (value <= 80) {
       ui.next().css({<span class='js-literal'>'background'</span> : <span class='js-value'>'rgba(87, 250, 87,'</span> + alpha + <span class='js-value'>')'</span>});
     } else {
-      ui.next().css({<span class='js-literal'>'background'</span> : <span class='js-value'>'rgba(250, 81, 81,'</span> + alpha + <span class='js-value'>')'</span>});			
+      ui.next().css({<span class='js-literal'>'background'</span> : <span class='js-value'>'rgba(250, 81, 81,'</span> + alpha + <span class='js-value'>')'</span>});            
     }
   }
-});	
-					</pre>
-				</code>
-			</div>
-			
-		</div>
-		<div class="cs-demo">		
-		
-			<div class='cs-demo-5'>
-				<div id='slider-half-circle-bottom'> 
-				</div>
-				<code class='cs-jscode'>
-					<pre>
+}); 
+                    </pre>
+                </code>
+            </div>
+            
+        </div>
+        <div class="cs-demo">       
+        
+            <div class='cs-demo-5'>
+                <div id='slider-half-circle-bottom'> 
+                </div>
+                <code class='cs-jscode'>
+                    <pre>
 <span class='js-keyword'>
 var </span>halfBottomCircularSlider = $(<span class='js-literal'>'#slider'</span>).CircularSlider({ 
     min : <span class='js-value'>-50</span>, 
@@ -204,21 +204,21 @@ var </span>halfBottomCircularSlider = $(<span class='js-literal'>'#slider'</span
     labelPrefix: <span class='js-literal'>"&#9661;"</span>,
     slide : <span class='js-keyword'>function</span>(value) {
     <span class='js-keyword'>var</span> alpha = Math.abs(value) / 100;   
-	ui.next().css({<span class='js-literal'>'background'</span> : <span class='js-value'>'rgba(7, 154, 252,'</span> + alpha + <span class='js-value'>')'</span>});
+    ui.next().css({<span class='js-literal'>'background'</span> : <span class='js-value'>'rgba(7, 154, 252,'</span> + alpha + <span class='js-value'>')'</span>});
     }
-});	
-					</pre>
-				</code>
-			</div>
-			
-		</div>
-		<div class="cs-demo">		
-		
-			<div class='cs-demo-6'>
-				<div id='slider-customized'> 
-				</div>
-				<code class='cs-jscode'>
-					<pre>
+}); 
+                    </pre>
+                </code>
+            </div>
+            
+        </div>
+        <div class="cs-demo">       
+        
+            <div class='cs-demo-6'>
+                <div id='slider-customized'> 
+                </div>
+                <code class='cs-jscode'>
+                    <pre>
 <span class='js-keyword'>
 var </span>imageSlider = $(<span class='js-literal'>'#slider'</span>).CircularSlider({ 
     min : <span class='js-value'>0</span>, 
@@ -233,65 +233,65 @@ var </span>imageSlider = $(<span class='js-literal'>'#slider'</span>).CircularSl
         <span class='js-keyword'>var</span> color = colors[parseInt(value / 23)];
         ui.find(<span class='js-literal'>'.jcs'</span>).css({<span class='js-literal'>'border-color'</span> : color });
         ui.find(<span class='js-literal'>'.jcs-indicator'</span>).css({<span class='js-literal'>'background'</span> : color });
-    }	
-});	
-					</pre>
-				</code>
-			</div>
-			
-		</div>
-		<div class='t-comments'>
-			<div class="cs-row">			
-				<span id="forkongithub"><a href="https://github.com/princejwesley/circular-slider"><i class="fa fa-github"></i> fork me</a></span>
-			</div>
-			<!--
-			Disqus comments
-			-->
-			
-			<div id="disqus_thread"></div>
-			<script type="text/javascript">
-				var disqus_shortname = 'toolitup';
-				var disqus_identifier = '/js/circular-slider';
-				var disqus_title = "Circular Slider - A JQuery Plugin | JS | toolitup.com";
-				var disqus_url = "http://www.toolitup.com/js/circular-slider.html";
-		
-				(function() {
-					var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-					dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-				})();
-			</script>
-			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-			<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-		</div>
-		
-	</div>
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		
-		ga('create', 'UA-55005923-1', 'auto');
-		ga('require', 'displayfeatures');
-		ga('send', 'pageview');		
+    }   
+}); 
+                    </pre>
+                </code>
+            </div>
+            
+        </div>
+        <div class='t-comments'>
+            <div class="cs-row">            
+                <span id="forkongithub"><a href="https://github.com/princejwesley/circular-slider"><i class="fa fa-github"></i> fork me</a></span>
+            </div>
+            <!--
+            Disqus comments
+            -->
+            
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                var disqus_shortname = 'toolitup';
+                var disqus_identifier = '/js/circular-slider';
+                var disqus_title = "Circular Slider - A JQuery Plugin | JS | toolitup.com";
+                var disqus_url = "http://www.toolitup.com/js/circular-slider.html";
+        
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+        
+    </div>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        
+        ga('create', 'UA-55005923-1', 'auto');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');     
 
-	</script>				
-	
-	<script type="text/javascript">
-		window.___gcfg = {
-			lang: 'en-US'
-		}; 
+    </script>               
+    
+    <script type="text/javascript">
+        window.___gcfg = {
+            lang: 'en-US'
+        }; 
 
-		(function() {
-			var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-			po.src = 'https://apis.google.com/js/plusone.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-		})();
-	</script>
-	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-	<script src="/assets/js/circular-slider.min.js"></script>
-	<script src="/assets/js/toolitup-circular-slider.min.js"></script>
+        (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+    </script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <script src="assets/js/circular-slider.min.js"></script>
+    <script src="assets/js/toolitup-circular-slider.min.js"></script>
 
 </body>
 

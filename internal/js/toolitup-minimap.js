@@ -46,7 +46,7 @@ function initSlider($slider, slide) {
 		rest: "label", suffix: "", 
 		formatLabel: function(value) {
 			var divider = slide.divBy || 100;
-			if(value % 10 == 0)
+			if(value % 10 === 0)
 				return (value/divider);
 			else return "";
 		}
